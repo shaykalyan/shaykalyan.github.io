@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,400italic);
+
+body
+{
+	background-image:url('../images/bg.png');
+	background-repeat:repeat;
+	width: 100%;
+
+	font-family: 'Arimo', serif;
+    font-size: 48px;
+
+}
+
+.splash {
+	color: white;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+
+.splash > p {
+	width: 100%;
+	text-align: center;
+}	
