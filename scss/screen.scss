@@ -1,4 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,400italic);
+@import "compass/reset";
+@import "compass/css3";
+
+/* fonts */
+@import "partials/_fonts.scss";
+
+/* grid system - bootstrap */
+@import "partials/_grid.scss";
+
+@import "partials/_navigation.scss";
 
 body
 {
@@ -21,4 +30,4 @@ body
 .splash > p {
 	width: 100%;
 	text-align: center;
-}	
+}	 

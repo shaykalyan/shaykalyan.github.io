@@ -1,0 +1,17 @@
+{
+  "name": "akshaykalyan",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-connect": "^0.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xShay",
+  "license": "ISC"
+}
