@@ -1560,13 +1560,15 @@ footer p {
     display: block;
     padding-left: 0px;
     float: left;
+    display: block;
+    width: 100%;
   }
   .nav .links ul li {
     display: block;
     padding-left: 0px;
   }
   .nav .links ul li a {
-    width: 100%;
+    display: block;
   }
   .nav .links.nav-open {
     -webkit-transform: translateY(0);
