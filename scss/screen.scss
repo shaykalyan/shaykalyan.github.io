@@ -1,33 +1,9 @@
-@import "compass/reset";
 @import "compass/css3";
+@import "vendor/_clearfix.scss";
+@import "modules/_variables.scss";
 
-/* fonts */
-@import "partials/_fonts.scss";
-
-/* grid system - bootstrap */
 @import "partials/_grid.scss";
-
+@import "partials/_fonts.scss";
+@import "partials/_base.scss";
 @import "partials/_navigation.scss";
 
-body
-{
-	background-image:url('../images/bg.png');
-	background-repeat:repeat;
-	width: 100%;
-
-	font-family: 'Arimo', serif;
-    font-size: 48px;
-
-}
-
-.splash {
-	color: black;
-	position: absolute;
-	top: 40%;
-	width: 100%;
-}
-
-.splash > p {
-	width: 100%;
-	text-align: center;
-}	 

@@ -1,0 +1,156 @@
+body
+{
+	background-image:url('../images/bg.png');
+	background-repeat:repeat;
+	width: 100%;
+    font-size: 48px;
+    color: $color-gray;
+}
+
+a:active, a:focus, a:visited, a:hover {
+   outline:  none;
+   border: none;
+   text-decoration: none;
+}
+
+.home-intro {
+	background-color: $color-gray-alpha;
+
+	.main-title {
+		span {
+		color: $color-blue;
+		}
+
+		h1 {
+			font-family: 'sofia-prolight';
+			font-size: 0.7em;
+
+			@media (min-width: $width-sm) {
+				font-size: 1.3em;
+			}
+			@media (min-width: $width-md) {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+
+#twitter {
+	@include box-shadow(0px -2px 5px -2px #555555);
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+	@media (min-width: $width-sm) {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+
+	p {
+		text-align: center;
+
+		span {
+			color: $color-blue;
+		}
+	}
+	
+	#twitter-username {
+		p {
+			margin-bottom: 0px;
+		}
+		a {
+			background-color: white;
+			&:hover {
+				background-color: $color-blue;
+			}
+		}
+	}
+
+	img {
+		display: block;
+		margin: auto;
+	}
+
+	.tweet {
+		&::before {
+		font-family: 'icomoon';
+		content: "\e63a";
+		position: relative;
+		top: -10px;
+		left: -10px;
+		}
+	}
+}
+
+#about {
+	img {
+		display: block;
+		margin: auto;
+		@include filter(grayscale(100%));
+		@include transition(all 0.5s ease);
+
+		&:hover {
+			@include filter(grayscale(0%));
+		}
+
+		@media (min-width: $width-sm) {	
+			margin-top: 30px;	
+			height: 100%;
+			width: 100%;	
+		}
+
+		@media (min-width: $width-md) {
+			height: 300px;
+			width: 300px;	
+			margin-top: 0px;	
+		}
+	}
+}
+
+#contact {
+	margin-top: 30px;
+	padding-bottom: 0px;
+	@include box-shadow(0px 2px 5px -2px #555555);
+
+	@media (min-width: $width-sm) {
+		padding-bottom: 40px;
+	}
+}
+
+.social-links {
+	ul {
+		list-style-type: none;
+		margin-top: 0px;
+		padding-left: 0px;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		li {
+			display: inline;
+			padding-right: 20px;
+		}
+	}
+
+	a {
+		background-color: transparent;
+		font-size: .7em;
+	}
+
+	span {
+		color: #333333;
+		@include transition (color 0.3s ease);
+		&:hover {
+			color: $color-blue;
+		}
+	}
+}
+
+footer {
+	padding: 10px 0 10px 0;
+	background-color: $color-gray-alpha;
+
+	p {
+		font-size: 0.3em;
+		text-align: center;
+	}
+}
