@@ -2,11 +2,13 @@ $(document).ready(function($) {
 
 	// responsive nav
 	$(".nav-trigger").on('click', function(event) {
+		event.preventDefault();
 		$('#nav').toggleClass('nav-open');
 		$(this).toggleClass('nav-open');
 	});
 
 	$("#nav a").on('click', function(event) {
+		event.preventDefault();
 		$('#nav').toggleClass('nav-open');
 		$('.nav-trigger').toggleClass('nav-open');
 	});

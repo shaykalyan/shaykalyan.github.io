@@ -20,10 +20,11 @@ a:active, a:focus, a:visited, a:hover {
 		span {
 		color: $color-blue;
 		}
-
+		
 		h1 {
 			font-family: 'sofia-prolight';
 			font-size: 0.7em;
+			z-index: 0;
 
 			@media (min-width: $width-sm) {
 				font-size: 1.3em;
