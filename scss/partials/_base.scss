@@ -49,15 +49,14 @@ a:active, a:focus, a:visited, a:hover {
 
 	p {
 		text-align: center;
-
-		span {
-			color: $color-blue;
-		}
 	}
 	
 	#twitter-username {
 		p {
 			margin-bottom: 0px;
+			span {
+				color: $color-blue;
+			}
 		}
 		a {
 			background-color: white;
