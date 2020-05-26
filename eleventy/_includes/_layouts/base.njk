@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -60,92 +60,7 @@
 
         <div class="container" id="blog-content">
             <div class="row cf">
-                
-<div class="container">
-  <div class="row cf blog-home">
-    <div class="col-sm-12">
-
-      <h1>Latest Posts</h1>
-
-      
-        <article class="blog-post-item">
-          <h2>
-            <a href="/blog/posts/2020/second-post/">Second ever post!</a>
-          </h2>
-
-          <div class="post-metadata">
-    <span class="post-metadata-timestamp">
-        <span class="icon icon-calendar"></span>
-        <time datetime="2019-05-30T00:00:00.000Z">May 29, 2019</time>
-    </span>
-    <span class="post-tags link-alternate">
-        <span class="icon icon-price-tags"></span>
-        
-            <span class="post-metadata-tag">
-                <a href="">
-                    post
-                </a>
-            </span>
-        
-            <span class="post-metadata-tag">
-                <a href="">
-                    test2
-                </a>
-            </span>
-        
-    </span>
-</div>
-
-          <div class="blog-post-item-excerpt">
-            <p>
-              
-This is some excerpt from the post
-
-
-            </p>
-          </div>
-        </article>
-      
-        <article class="blog-post-item">
-          <h2>
-            <a href="/blog/posts/2020/first-post/">Welcome to the blog</a>
-          </h2>
-
-          <div class="post-metadata">
-    <span class="post-metadata-timestamp">
-        <span class="icon icon-calendar"></span>
-        <time datetime="2019-05-15T00:00:00.000Z">May 14, 2019</time>
-    </span>
-    <span class="post-tags link-alternate">
-        <span class="icon icon-price-tags"></span>
-        
-            <span class="post-metadata-tag">
-                <a href="">
-                    post
-                </a>
-            </span>
-        
-            <span class="post-metadata-tag">
-                <a href="">
-                    meta
-                </a>
-            </span>
-        
-    </span>
-</div>
-
-          <div class="blog-post-item-excerpt">
-            <p>
-              my exerpt
-
-            </p>
-          </div>
-        </article>
-      
-
-    </div>
-  </div>
-</div>
+                {{ content | safe }}
             </div>
         </div>
 

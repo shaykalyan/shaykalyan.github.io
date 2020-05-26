@@ -15,6 +15,9 @@
   "author": "xShay",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "grunt": "^0.4.5",
+    "moment": "^2.26.0"
   }
 }

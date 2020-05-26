@@ -1,10 +1,34 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body
 {
-	background-image:url('../images/bg.png');
-	background-repeat:repeat;
-	width: 100%;
+    background-image:url('../images/bg.png');
+    background-repeat:repeat;
+    width: 100%;
     font-size: 48px;
     color: $color-gray;
+    margin-bottom: $footer-height;
+}
+
+footer {
+    // padding: 10px 0 10px 0;
+    background-color: $color-gray-alpha;
+    position: absolute;
+    height: $footer-height;
+    line-height: $footer-height;
+    bottom: 0;
+    width: 100%;
+
+    box-shadow: 0px 2px 5px 2px #555;
+
+    p {
+        font-size: 0.3em;
+        text-align: center;
+        margin: 0;
+    }
 }
 
 a:active, a:focus, a:visited, a:hover {
@@ -13,147 +37,189 @@ a:active, a:focus, a:visited, a:hover {
    text-decoration: none;
 }
 
+.link-alternate {
+    a {
+        background-color: white;
+        &:hover {
+            background-color: $color-blue;
+        }
+    }
+}
+
+.link-external {
+    &::after {
+        font-family: 'icomoon';
+        content: $icon-new-tab;
+        position: relative;
+        top: -1em;
+        font-size: 0.6em;
+        } 
+}
+
 .home-intro {
-	background-color: $color-gray-alpha;
+    background-color: $color-gray-alpha;
 
-	.main-title {
-		span {
-		color: $color-blue;
-		}
-		
-		h1 {
-			font-family: 'sofia-prolight';
-			font-size: 0.7em;
-			z-index: 0;
+    .main-title {
+        margin: 1em 0 1em 0;
+        span {
+        color: $color-blue;
+        }
+        
+        h1 {
+            font-family: 'sofia-prolight';
+            font-size: 0.7em;
+            z-index: 0;
 
-			@media (min-width: $width-sm) {
-				font-size: 1.3em;
-			}
-			@media (min-width: $width-md) {
-				font-size: 1.5em;
-			}
-		}
-	}
+            @media (min-width: $width-sm) {
+                font-size: 1.3em;
+            }
+            @media (min-width: $width-md) {
+                font-size: 1.5em;
+            }
+        }
+    }
 }
 
 
 #twitter {
-	@include box-shadow(0px -2px 5px -2px #555555);
-	padding-top: 30px;
-	padding-bottom: 10px;
+    @include box-shadow(0px -2px 5px -2px #555555);
+    padding-top: 30px;
+    padding-bottom: 10px;
 
-	@media (min-width: $width-sm) {
-		padding-top: 50px;
-		padding-bottom: 20px;
-	}
+    @media (min-width: $width-sm) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 
-	p {
-		text-align: center;
+    p {
+        text-align: center;
 
-		img {
-			height: 1.1em;
-		}
-	}
-	
-	#twitter-username {
-		p {
-			margin-bottom: 0px;
-			span {
-				color: $color-blue;
-			}
-		}
-		a {
-			background-color: white;
-			&:hover {
-				background-color: $color-blue;
-			}
-		}
-	}
+        img {
+            height: 1.1em;
+        }
+    }
+    
+    #twitter-username {
+        p {
+            margin-bottom: 0px;
+            span {
+                color: $color-blue;
+            }
+        }
+    }
 
-	.tweet {
-		&::before {
-		font-family: 'icomoon';
-		content: "\e63a";
-		position: relative;
-		top: -10px;
-		left: -10px;
-		}
-	}
+    .tweet {
+        &::before {
+        font-family: 'icomoon';
+        content: $icon-quotes-left;
+        position: relative;
+        top: -10px;
+        left: -10px;
+        }
+    }
 }
 
 #about {
-	img {
-		display: block;
-		margin: auto;
-		height: 270px;
-		width: 270px;
-		background-color: $color-gray-alpha;
-		
-		@include transition(all 0.5s ease);
-		@include border-radius(50%);
-			
-		&:hover {
-			@include filter(grayscale(0%));
-		}
+    img {
+        display: block;
+        margin: auto;
+        height: 270px;
+        width: 270px;
+        background-color: $color-gray-alpha;
+        
+        @include transition(all 0.5s ease);
+        @include border-radius(50%);
+            
+        &:hover {
+            @include filter(grayscale(0%));
+        }
 
-		@media (min-width: $width-sm) {	
-			margin-top: 30px;	
-			height: 100%;
-			width: 100%;	
-		}
+        @media (min-width: $width-sm) {	
+            margin-top: 30px;	
+            height: 100%;
+            width: 100%;	
+        }
 
-		@media (min-width: $width-md) {
-			height: 250px;
-			width: 250px;	
-			margin-top: 0px;	
-		}
-	}
+        @media (min-width: $width-md) {
+            height: 250px;
+            width: 250px;	
+            margin-top: 0px;	
+        }
+    }
 }
 
 #contact {
-	margin-top: 30px;
-	padding-bottom: 0px;
-	@include box-shadow(0px 2px 5px -2px #555555);
+    margin-top: 30px;
+    padding-bottom: 0px;
+    // @include box-shadow(0px 2px 5px -2px #555555);
 
-	@media (min-width: $width-sm) {
-		padding-bottom: 40px;
-	}
+    @media (min-width: $width-sm) {
+        padding-bottom: 40px;
+    }
 }
 
 .social-links {
-	ul {
-		list-style-type: none;
-		margin-top: 0px;
-		padding-left: 0px;
-		display: table;
-		margin-left: auto;
-		margin-right: auto;
-		li {
-			display: inline;
-			padding-right: 20px;
-		}
-	}
+    ul {
+        list-style-type: none;
+        margin-top: 0px;
+        padding-left: 0px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        li {
+            display: inline;
+            padding-right: 20px;
+        }
+    }
 
-	a {
-		background-color: transparent;
-		font-size: .7em;
-	}
+    a {
+        background-color: transparent;
+        font-size: .7em;
+    }
 
-	span {
-		color: #333333;
-		@include transition (color 0.3s ease);
-		&:hover {
-			color: $color-blue;
-		}
-	}
+    span {
+        color: #333333;
+        @include transition (color 0.3s ease);
+        &:hover {
+            color: $color-blue;
+        }
+    }
 }
 
-footer {
-	padding: 10px 0 10px 0;
-	background-color: $color-gray-alpha;
-
-	p {
-		font-size: 0.3em;
-		text-align: center;
-	}
+.blog-home {
+    margin-top: 0.5em;
 }
+
+.blog-post-item {
+    margin:0.5em 0 0.75em 0;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0.5em;
+    }
+}
+
+.post-metadata {
+    font-size: 0.35em;
+    font-family: 'sofia-prolight';
+
+    .icon {
+        margin-right: 0.5em;
+    }
+}
+
+.post-metadata-timestamp {
+    margin-right: 1em;
+}
+
+.post-metadata-tag {
+    margin-right: 5px;
+}
+
+.post-frontmatter {
+    margin: 1em 0 0.75em 0;
+}
+
