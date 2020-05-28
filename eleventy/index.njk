@@ -11,7 +11,7 @@ pagination:
   <div class="row cf blog-home">
     <div class="col-sm-12">
 
-      <h1>Latest Posts</h1>
+      <h1>Latest Posts 👇🏼</h1>
 
       {% for post in posts %}
         <article class="blog-post-item">
@@ -26,6 +26,10 @@ pagination:
               {{ post.data.page.excerpt }}
             </p>
           </div>
+
+          <p class="blog-post-item-cta link-alternate">
+            <a href="{{ post.url | url }}">Read more...</a>
+          </p>
         </article>
       {% endfor %}
 

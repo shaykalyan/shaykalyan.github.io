@@ -5,16 +5,18 @@ title: Welcome to the blog
 date: 2019-05-15
 draft: true
 ---
-my exerpt
+The internet has made it more accessible than ever for folks to ask questions, share knowledge, and collaborate. And I've got to admit— without it, I wouldn't be where I am today doing the things I do. It was due time I created a space to give back, even if it's just me blabbering into the void 🤷🏼‍♂️.
 ---
 
-### Sub sub titletest
+## Why not just use *insert hosted blogging solution here*?
 
-Eiusmod voluptate enim reprehenderit sint culpa aliquip laborum reprehenderit cillum. Elit dolor in cupidatat adipisicing nulla velit et. Dolor laborum dolor enim labore exercitation ut. Elit sit et adipisicing proident elit Lorem quis ut laborum adipisicing. Minim nostrud in tempor velit.
+There's no doubt that it would have been much more straightforward for me to sign up to Medium or spin up a Wordpress site,  
+
+But what about `inline code` like this?
 
 Commodo nisi nostrud culpa nisi. Ut nulla dolore ipsum quis non enim cupidatat et ad. Eiusmod qui eu magna velit sunt fugiat duis eiusmod ut irure commodo laborum proident.
 
-```
-code block?
+```js
+var foo = "test;
 ```
 

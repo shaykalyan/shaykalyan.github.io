@@ -1,4 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 const moment = require('moment');
 
 moment.locale('en');
@@ -10,6 +12,7 @@ module.exports = function (eleventyConfig) {
   // ]);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addFilter('dateIso', date => {
     return moment(date).toISOString();

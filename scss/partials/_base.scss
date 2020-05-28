@@ -3,10 +3,9 @@ html {
     min-height: 100%;
 }
 
-body
-{
-    background-image:url('../images/bg.png');
-    background-repeat:repeat;
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
     width: 100%;
     font-size: 48px;
     color: $color-gray;
@@ -31,10 +30,13 @@ footer {
     }
 }
 
-a:active, a:focus, a:visited, a:hover {
-   outline:  none;
-   border: none;
-   text-decoration: none;
+a:active,
+a:focus,
+a:visited,
+a:hover {
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 .link-alternate {
@@ -48,12 +50,12 @@ a:active, a:focus, a:visited, a:hover {
 
 .link-external {
     &::after {
-        font-family: 'icomoon';
+        font-family: "icomoon";
         content: $icon-new-tab;
         position: relative;
         top: -1em;
         font-size: 0.6em;
-        } 
+    }
 }
 
 .home-intro {
@@ -62,11 +64,11 @@ a:active, a:focus, a:visited, a:hover {
     .main-title {
         margin: 1em 0 1em 0;
         span {
-        color: $color-blue;
+            color: $color-blue;
         }
-        
+
         h1 {
-            font-family: 'sofia-prolight';
+            font-family: "sofia-prolight";
             font-size: 0.7em;
             z-index: 0;
 
@@ -79,7 +81,6 @@ a:active, a:focus, a:visited, a:hover {
         }
     }
 }
-
 
 #twitter {
     @include box-shadow(0px -2px 5px -2px #555555);
@@ -98,7 +99,7 @@ a:active, a:focus, a:visited, a:hover {
             height: 1.1em;
         }
     }
-    
+
     #twitter-username {
         p {
             margin-bottom: 0px;
@@ -110,11 +111,11 @@ a:active, a:focus, a:visited, a:hover {
 
     .tweet {
         &::before {
-        font-family: 'icomoon';
-        content: $icon-quotes-left;
-        position: relative;
-        top: -10px;
-        left: -10px;
+            font-family: "icomoon";
+            content: $icon-quotes-left;
+            position: relative;
+            top: -10px;
+            left: -10px;
         }
     }
 }
@@ -126,24 +127,24 @@ a:active, a:focus, a:visited, a:hover {
         height: 270px;
         width: 270px;
         background-color: $color-gray-alpha;
-        
+
         @include transition(all 0.5s ease);
         @include border-radius(50%);
-            
+
         &:hover {
             @include filter(grayscale(0%));
         }
 
-        @media (min-width: $width-sm) {	
-            margin-top: 30px;	
+        @media (min-width: $width-sm) {
+            margin-top: 30px;
             height: 100%;
-            width: 100%;	
+            width: 100%;
         }
 
         @media (min-width: $width-md) {
             height: 250px;
-            width: 250px;	
-            margin-top: 0px;	
+            width: 250px;
+            margin-top: 0px;
         }
     }
 }
@@ -174,12 +175,12 @@ a:active, a:focus, a:visited, a:hover {
 
     a {
         background-color: transparent;
-        font-size: .7em;
+        font-size: 0.7em;
     }
 
     span {
         color: #333333;
-        @include transition (color 0.3s ease);
+        @include transition(color 0.3s ease);
         &:hover {
             color: $color-blue;
         }
@@ -191,20 +192,32 @@ a:active, a:focus, a:visited, a:hover {
 }
 
 .blog-post-item {
-    margin:0.5em 0 0.75em 0;
+    margin: 0.5em 0 0.75em 0;
 
     h2 {
-        margin-bottom: 0;
+        margin-bottom: 0.25em;
     }
 
-    p {
-        margin-top: 0.5em;
+    // p {
+
+    // }
+
+    .blog-post-item-excerpt {
+        margin-top: 0.3em;
+    }
+
+    .post-metadata {
+        font-size: 0.3em;
+    }
+
+    .blog-post-item-cta {
+        font-size: 0.3em;
     }
 }
 
 .post-metadata {
     font-size: 0.35em;
-    font-family: 'sofia-prolight';
+    font-family: "sofia-prolight";
 
     .icon {
         margin-right: 0.5em;
@@ -217,9 +230,18 @@ a:active, a:focus, a:visited, a:hover {
 
 .post-metadata-tag {
     margin-right: 5px;
+    border: solid 2px $color-blue;
+
+    a {
+        padding: 0 5px;
+    }
 }
 
 .post-frontmatter {
     margin: 1em 0 0.75em 0;
 }
 
+.post-content > code,
+pre {
+    font-size: 0.5em;
+}
