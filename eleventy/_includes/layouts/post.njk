@@ -1,18 +1,18 @@
 ﻿---
-layout: _layouts/base.njk
+layout: layouts/base.njk
 ---
 
 <article>
   <div class="row post-frontmatter">
     <div class="col-sm-12">
       <h1>{{ title }}</h1>
-      {% include "../_components/post-metadata.njk" %}
+      {% include "../components/post-metadata.njk" %}
     </div>
   </div>
 </div>
 
 <div class="row post-content">
-  <div class="">
+  <div class="col-sm-12">
     {{ content | safe }}
   </div>
 </div>

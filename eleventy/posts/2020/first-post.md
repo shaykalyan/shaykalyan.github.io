@@ -1,5 +1,5 @@
 ---
-layout: _layouts/post.njk
+layout: layouts/post.njk
 tags: ['post', 'meta']
 title: Welcome to the blog
 date: 2019-05-15

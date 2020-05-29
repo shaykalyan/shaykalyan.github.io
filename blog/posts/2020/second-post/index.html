@@ -32,7 +32,7 @@
     <body>
         <nav class="nav">
             <div class="container">
-                <div class="row cf">
+                <div class="row">
                     <div class="col-sm-2 logo" onclick="location.href='/';" style="cursor: pointer;">
                         <img src="/images/logo.svg" alt="Logo">
                     </div>
@@ -56,46 +56,64 @@
         </nav>
 
         <div class="container" id="blog-content">
-            <div class="row cf">
+            <div class="row">
                 
 <article>
   <div class="row post-frontmatter">
     <div class="col-sm-12">
       <h1>Second ever post!</h1>
-      <div class="post-metadata">
-    <span class="post-metadata-timestamp">
+      <div class="post-metadata row">
+    <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
-        <time datetime="2020-05-28T05:26:06.287Z">May 27, 2020</time>
-    </span>
-    <span class="post-tags link-alternate">
+        <time datetime="2020-05-29T06:30:42.885Z">May 28, 2020</time>
+    </div>
+    <div class="post-tags link-alternate col-xs-12 col-sm-auto">
         <span class="icon icon-price-tags"></span>
         
             <span class="post-metadata-tag">
-                <a href="">
+                <a href="/blog/tags/post">
                     post
                 </a>
             </span>
         
             <span class="post-metadata-tag">
-                <a href="">
+                <a href="/blog/tags/test2">
                     test2
                 </a>
             </span>
         
             <span class="post-metadata-tag">
-                <a href="">
+                <a href="/blog/tags/dummy tag">
                     dummy tag
                 </a>
             </span>
         
-    </span>
+            <span class="post-metadata-tag">
+                <a href="/blog/tags/dummy tag">
+                    dummy tag
+                </a>
+            </span>
+        
+            <span class="post-metadata-tag">
+                <a href="/blog/tags/dummy tag">
+                    dummy tag
+                </a>
+            </span>
+        
+            <span class="post-metadata-tag">
+                <a href="/blog/tags/dummy tag">
+                    dummy tag
+                </a>
+            </span>
+        
+    </div>
 </div>
     </div>
   </div>
 </div>
 
 <div class="row post-content">
-  <div class="">
+  <div class="col-sm-12">
     <p>This is some excerpt from the post</p>
 <h2>Hello world!</h2>
 <h3>Sub title</h3>
@@ -113,7 +131,7 @@
 
         <footer>
             <div class="container">
-                <div class="row cf">
+                <div class="row">
                     <div class="col-sm-12">
                         <p>&copy; 2020 Shay Kalyan</p>
                     </div>
@@ -122,6 +140,7 @@
         </footer>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;

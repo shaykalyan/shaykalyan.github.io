@@ -21,6 +21,9 @@ module.exports = function (eleventyConfig) {
     return moment(date).format('LL'); // E.g. May 31, 2019
   });
 
+  eleventyConfig.addCollection("tagList", require("./eleventy/js/getTagsList.js"));
+
+
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     // Optional, default is "---"

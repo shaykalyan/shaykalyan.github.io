@@ -1,0 +1,36 @@
+---
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: 
+    - all
+    - tagList
+layout: layouts/base.njk
+renderData:
+  title: Tagged "{{ tag }}"
+permalink: /tags/{{ tag }}/
+---
+
+<div class="container">
+    <div class="row">
+        {# <h1>Tagged  "{{ tag }}"</h1> #}
+        <h1>Tagged  
+        
+        <span class="post-metadata-tag">
+                <a href="/blog/tags/{{tag}}">
+                    {{ tag }}
+                </a>
+            </span>
+        </h1>
+    </div>
+
+    <div class="row">
+        {% set posts = collections[tag] %}
+        {% include "components/posts-list.njk" %}
+    </div>
+    <div class="row">
+        <p>See  <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+    </div>
+</div>

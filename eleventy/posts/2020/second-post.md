@@ -1,6 +1,6 @@
 ---
-layout: _layouts/post.njk
-tags: ['post', 'test2', 'dummy tag']
+layout: layouts/post.njk
+tags: ['post', 'test2', 'dummy tag', 'dummy tag', 'dummy tag', 'dummy tag']
 title: Second ever post!
 date: 2019-05-30
 ---

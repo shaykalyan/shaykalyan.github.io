@@ -1,16 +1,16 @@
-<div class="post-metadata">
-    <span class="post-metadata-timestamp">
+<div class="post-metadata row">
+    <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
         <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
-    </span>
-    <span class="post-tags link-alternate">
+    </div>
+    <div class="post-tags link-alternate col-xs-12 col-sm-auto">
         <span class="icon icon-price-tags"></span>
         {% for tag in (post.data.tags or tags) %}
             <span class="post-metadata-tag">
-                <a href="">
+                <a href="/blog/tags/{{tag}}">
                     {{ tag }}
                 </a>
             </span>
         {% endfor %}
-    </span>
+    </div>
 </div>
