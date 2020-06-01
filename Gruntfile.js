@@ -42,10 +42,6 @@ module.exports = function(grunt) {
         }
       }
     }
-
-
-    
-
   });
 
   // Load the plugins

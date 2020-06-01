@@ -1,9 +1,12 @@
 @import "compass/css3";
-@import "vendor/_clearfix.scss";
-@import "modules/_variables.scss";
 
-@import "partials/_grid.scss";
-@import "partials/_fonts.scss";
-@import "partials/_base.scss";
-@import "partials/_navigation.scss";
+@import "vendor/bootstrap-reboot";
+@import "vendor/bootstrap-grid";
 
+@import "modules/_variables";
+
+@import "partials/_fonts";
+@import "partials/_icomoon";
+@import "partials/_base";
+@import "partials/_navigation";
+@import "partials/_syntax-highlighting";

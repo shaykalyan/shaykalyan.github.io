@@ -5,9 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "grunt": "~0.4.4",
-    "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-compass": "^0.7.2",
-    "grunt-contrib-connect": "^0.7.1"
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-watch": "~0.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,9 @@
   "author": "xShay",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "grunt": "^0.4.5",
+    "moment": "^2.26.0"
   }
 }

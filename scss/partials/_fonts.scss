@@ -1,120 +1,84 @@
 @font-face {
-    font-family: 'sofia-prolight';
-    src: url('../fonts/sofiaprolight-webfont.eot');
-    src: url('../fonts/sofiaprolight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sofiaprolight-webfont.svg#sofia_prolight') format('svg'),
-         url('../fonts/sofiaprolight-webfont.woff') format('woff'),
-         url('../fonts/sofiaprolight-webfont.ttf') format('truetype');
+    font-family: "sofia-prolight";
+    src: url("../fonts/sofiaprolight-webfont.eot");
+    src: url("../fonts/sofiaprolight-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/sofiaprolight-webfont.svg#sofia_prolight") format("svg"),
+        url("../fonts/sofiaprolight-webfont.woff") format("woff"),
+        url("../fonts/sofiaprolight-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'code-pro';
-    src: url('../fonts/code_pro_demo-webfont.eot');
-    src: url('../fonts/code_pro_demo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/code_pro_demo-webfont.svg#code_pro_demoregular') format('svg'),
-         url('../fonts/code_pro_demo-webfont.woff') format('woff'),
-         url('../fonts/code_pro_demo-webfont.ttf') format('truetype');
+    font-family: "code-pro";
+    src: url("../fonts/code_pro_demo-webfont.eot");
+    src: url("../fonts/code_pro_demo-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/code_pro_demo-webfont.svg#code_pro_demoregular") format("svg"),
+        url("../fonts/code_pro_demo-webfont.woff") format("woff"),
+        url("../fonts/code_pro_demo-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-// icons via icomoon.io
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-gk9eq1');
-	src:url('../fonts/icomoon.eot?#iefix-gk9eq1') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-gk9eq1') format('woff'),
-		url('../fonts/icomoon.ttf?-gk9eq1') format('truetype'),
-		url('../fonts/icomoon.svg?-gk9eq1#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-quotes-left:before {
-	content: "\e63a";
-}
-.icon-facebook:before {
-	content: "\e601";
-}
-.icon-instagram:before {
-	content: "\e602";
-}
-.icon-twitter:before {
-	content: "\e600";
-}
-.icon-github:before {
-	content: "\e603";
-}
-.icon-linkedin:before {
-	content: "\e604";
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'code-pro';
-	font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "code-pro";
+    font-weight: 100;
 }
 
 h1 {
-	font-size: 0.6em;
+    font-size: 0.6em;
+    margin: 0;
 
-	@media (min-width: $width-sm) {
-		font-size: 0.8em;
-	}
+    @media (min-width: $width-sm) {
+        font-size: 0.8em;
+    }
 }
 
 h2 {
-	font-size: 0.5em;
+    font-size: 0.5em;
+    margin: 2rem 0 0.5rem;
 }
 
 h3 {
-	font-size: 0.45em;
+    font-size: 0.45em;
 }
 
 h4 {
-	font-size: 0.40em;
+    font-size: 0.4em;
 }
 
 h5 {
-	font-size: 0.35em;
+    font-size: 0.35em;
 }
 
 h6 {
-	font-size: 0.30em;
+    font-size: 0.3em;
 }
 
-p {
-	font-family: 'sofia-prolight';
-	font-size: 0.35em;
+p,
+ul,
+ol,
+table {
+    font-family: "sofia-prolight";
+    font-size: 1rem;
 
-	@media (min-width: $width-sm) {
-		font-size: 0.4em;
-	}
+    @media (min-width: $width-sm) {
+        font-size: 1.25rem;
+    }
 }
 
 a {
-	color: $color-blue;
-	background-color: $color-blue-alpha;
-	
-	&:hover {
-		text-decoration: none;
-		color: white;
-		background-color: $color-blue;
-	}
-}
+    color: $color-blue;
+    background-color: $color-blue-alpha;
 
+    &:hover {
+        text-decoration: none;
+        color: white;
+        background-color: $color-blue;
+    }
+}

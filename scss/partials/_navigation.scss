@@ -1,154 +1,160 @@
 .nav {
-	font-size: 0.5em; 	
-	background-color: $color-navbar-bg ;
-	@include box-shadow(0px 0px 5px 0px #555555);
+    background-color: $color-navbar-bg;
+    @include box-shadow(0px 0px 5px 0px #555555);
 
-	ul {
-		float:right;
-		margin: 0px;
-		margin-top: 34px;
+    ul {
+        float: right;
+        margin: 0px;
+        margin-top: 34px;
 
-		li {
-			display: inline;
-			padding-left: 30px;
-			height: 100%;
+        li {
+            display: inline;
+            padding-left: 30px;
+            height: 100%;
+            font-size: 1.5rem;
 
-			a {
-				font-family: 'code-pro';
-				@include transition(color 0.3s ease);
-				height: 100%;
-				color: $color-gray;
-				background-color: transparent;
-				border-bottom: none;
-				&:hover {
-					text-decoration: none;
-					color: $color-blue;
+            a {
+                font-family: "code-pro";
+                @include transition(color 0.3s ease);
+                height: 100%;
+                color: $color-gray;
+                background-color: transparent;
+                border-bottom: none;
 
-				}
-			}
-		}
-	}
+                &:hover,
+                &.active {
+                    text-decoration: none;
+                    color: $color-blue;
+                }
 
-	.logo {
-		z-index: 2;
-	}	
-	
-	img {
-		display: block;
-		margin-left: 0;
-		height: 100px;
-	}
- 
-	@media (max-width: 768px) {
-		.links {
-			position: absolute;
-			z-index: 1;
-			top: 80px;
-			@include translateY(-200%);
-			@include transition(all 0.5s ease);
-			background-color: rgba(255,255,255, 0.94);
-			width: 100%;
+                // &.active {
+                //     color: $color-blue;
+                // }
+            }
+        }
+    }
 
-			ul {
-				display: block;
-				padding-left: 0px;
-				float: left;
-				display: block;
-				width: 100%;
-				li {
-					display: block;
-					padding-left: 0px;
+    .logo {
+        z-index: 2;
+    }
 
-					a {
-						display: block;
-					}
-				}
-			}
+    img {
+        display: block;
+        margin-left: 0;
+        height: 100px;
+    }
 
-			&.nav-open {
-				@include translateY(0);
-			}
+    @media (max-width: 768px) {
+        .links {
+            position: absolute;
+            z-index: 1;
+            top: 80px;
+            @include translateY(-200%);
+            @include transition(all 0.5s ease);
+            background-color: rgba(255, 255, 255, 0.94);
+            width: 100%;
 
-		}
+            ul {
+                display: block;
+                padding-left: 0px;
+                float: left;
+                display: block;
+                width: 100%;
+                li {
+                    display: block;
+                    padding-left: 0px;
 
-		img {
-			display: block;
-			margin: auto;
-			height: 80px;
-		}
+                    a {
+                        display: block;
+                    }
+                }
+            }
 
-		.nav-trigger {
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			width: 50px;
-			height: 50px;
-			z-index: 3;
-			@include border-radius;
+            &.nav-open {
+                @include translateY(0);
+            }
+        }
 
-			background-color: transparent;
-			/* image replacement */
-			overflow: hidden;
-			text-indent: 100%;
-			white-space: nowrap;
+        img {
+            display: block;
+            margin: auto;
+            height: 80px;
+        }
 
-			z-index: 2;
-			span {
-				position: absolute;
-				display: block;
-				width: 40px;
-				height: 4px;
-				background: $color-blue;
-				top: 55%;
-				margin-top: -1px;
-				left: 50%;
-				margin-left: -10px;
-				@include transition(background 0.3s ease);
+        .nav-trigger {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            z-index: 3;
+            @include border-radius;
 
-				&::before, &::after {
-					content: '';
-					position: absolute;
-					left: 0;
-					background: inherit;
-					width: 100%;
-					height: 100%;
+            background-color: transparent;
+            /* image replacement */
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
 
-					@include transform(translateZ(0));
-					-webkit-backface-visibility: hidden;
-					backface-visibility: hidden;
-					-webkit-transition: -webkit-transform 0.3s, background 0s;
-					-moz-transition: -moz-transform 0.3s, background 0s;
-					transition: transform 0.3s, background 0s;
-				}
+            z-index: 2;
+            span {
+                position: absolute;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background: $color-blue;
+                top: 55%;
+                margin-top: -1px;
+                left: 50%;
+                margin-left: -10px;
+                @include transition(background 0.3s ease);
 
-				&::before {
-					top: -12px;
-					@include transform(rotate(0));
-				}
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    background: inherit;
+                    width: 100%;
+                    height: 100%;
 
-				&::after {
-					bottom: -12px;
-					@include transform(rotate(0));
-				}
-			}
+                    @include transform(translateZ(0));
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -webkit-transition: -webkit-transform 0.3s, background 0s;
+                    -moz-transition: -moz-transform 0.3s, background 0s;
+                    transition: transform 0.3s, background 0s;
+                }
 
-			&.nav-open span {
-				background: rgba(255,255,255,0);
+                &::before {
+                    top: -12px;
+                    @include transform(rotate(0));
+                }
 
-				&::before, &::after {
-					background: rgba($color-blue, 1);
-				}
+                &::after {
+                    bottom: -12px;
+                    @include transform(rotate(0));
+                }
+            }
 
-				&::before {
-					top: 0;
-					@include transform(rotate(135deg));
-				}
+            &.nav-open span {
+                background: rgba(255, 255, 255, 0);
 
-				&::after {
-					bottom: 0;
-					@include transform(rotate(225deg));
-				}
-			}
-		}
-	}
+                &::before,
+                &::after {
+                    background: rgba($color-blue, 1);
+                }
+
+                &::before {
+                    top: 0;
+                    @include transform(rotate(135deg));
+                }
+
+                &::after {
+                    bottom: 0;
+                    @include transform(rotate(225deg));
+                }
+            }
+        }
+    }
 }

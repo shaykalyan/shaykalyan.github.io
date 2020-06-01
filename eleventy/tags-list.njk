@@ -1,0 +1,27 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /tags/
+layout: layouts/base.njk
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Tags</h1>
+        </div>
+    </div>
+    <div class="row post-metadata" id="tags-list">
+        <div class="col">
+            <ul>
+                {% for tag in collections.tagList %}
+                    <li>
+                        <span class="post-metadata-tag">
+                            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                            <a href="{{ tagUrl | url }}" class="link-alternate">{{ tag }}</a>
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

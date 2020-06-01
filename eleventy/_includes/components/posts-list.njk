@@ -1,0 +1,19 @@
+{% for post in posts %}
+    <article class="blog-post-item">
+        <h2>
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+
+        {% include "./post-metadata.njk" %}
+
+        <div class="blog-post-item-excerpt">
+            <p>
+                {{ post.data.page.excerpt }}
+            </p>
+        </div>
+
+        <p class="blog-post-item-cta link-alternate">
+            <a href="{{ post.url | url }}">Read more...</a>
+        </p>
+    </article>
+{% endfor %}
