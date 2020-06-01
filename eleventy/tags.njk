@@ -12,25 +12,29 @@ renderData:
   title: Tagged "{{ tag }}"
 permalink: /tags/{{ tag }}/
 ---
-
 <div class="container">
     <div class="row">
-        {# <h1>Tagged  "{{ tag }}"</h1> #}
-        <h1>Tagged  
-        
-        <span class="post-metadata-tag">
-                <a href="/blog/tags/{{tag}}">
-                    {{ tag }}
-                </a>
-            </span>
-        </h1>
+        <div class="col">
+            <h1>
+            Tagged  
+            <span class="post-metadata-tag">
+                    <a href="/blog/tags/{{tag}}" class="link-alternate">
+                        {{ tag }}
+                    </a>
+                </span>
+            </h1>
+        </div>
     </div>
 
     <div class="row">
-        {% set posts = collections[tag] %}
-        {% include "components/posts-list.njk" %}
+        <div class="col">
+            {% set posts = collections[tag] %}
+            {% include "components/posts-list.njk" %}
+        </div>
     </div>
     <div class="row">
-        <p>See  <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+        <div class="col">
+            <p>See  <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+        </div>
     </div>
 </div>

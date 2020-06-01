@@ -6,13 +6,22 @@ layout: layouts/base.njk
 
 <div class="container">
     <div class="row">
-        <h1>Tags</h1>
+        <div class="col">
+            <h1>Tags</h1>
+        </div>
     </div>
-
-    <div class="row">
-        {% for tag in collections.tagList %}
-            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-        {% endfor %}
+    <div class="row post-metadata" id="tags-list">
+        <div class="col">
+            <ul>
+                {% for tag in collections.tagList %}
+                    <li>
+                        <span class="post-metadata-tag">
+                            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                            <a href="{{ tagUrl | url }}" class="link-alternate">{{ tag }}</a>
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>

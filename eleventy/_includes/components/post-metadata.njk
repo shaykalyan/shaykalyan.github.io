@@ -7,7 +7,7 @@
         <span class="icon icon-price-tags"></span>
         {% for tag in (post.data.tags or tags) %}
             <span class="post-metadata-tag">
-                <a href="/blog/tags/{{tag}}">
+                <a href="/blog/tags/{{tag}}" class="link-alternate">
                     {{ tag }}
                 </a>
             </span>

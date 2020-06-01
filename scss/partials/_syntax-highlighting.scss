@@ -4,3 +4,8 @@
 code {
     @extend code[class*="language-"];
 }
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-size: 1rem;
+}
