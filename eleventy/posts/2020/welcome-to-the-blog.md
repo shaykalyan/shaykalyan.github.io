@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 tags: ['meta']
 title: Welcome to the blog
-date: 2019-05-31
+date: 2019-05-31 18:00:00.00 -7
 ---
 The internet has made it more accessible than ever for folks to ask questions, share knowledge, and collaborate. And I've got to admit, without it, I wouldn't be where I am today doing the things I do. I figured it was due time I created a space to give back, even if it ends up with me just blabbering into the void 🤷🏼‍♂️.
 ---
@@ -24,9 +24,9 @@ That's where 11ty comes in.
 
 ## 11ty
 
-While on my search for a blogging solution I stumbled upon [staticgen.com](https://www.staticgen.com/), a website that tracks popular static site generators on GitHub and highlights the respective languages and templating technologies used. Several options line the top of that list: [NextJS](https://nextjs.org/), [GatsbyJS](https://www.gatsbyjs.org/), and [Hugo](https://gohugo.io/), however, these relied on technologies that I was not yet familiar with like React or Go. A couple of entries down on that list is where I found [11ty](https://www.11ty.dev/) (pronounced *Eleventy*).
+While on my search for a blogging solution I stumbled upon [staticgen.com](https://www.staticgen.com/), a website that tracks popular static site generators on GitHub and highlights the respective languages and templating technologies used. Several options lined the top of that list: [NextJS](https://nextjs.org/), [GatsbyJS](https://www.gatsbyjs.org/), and [Hugo](https://gohugo.io/), however, these relied on technologies that I was not yet familiar with like React or Go. A couple of entries down on that list is where I found [11ty](https://www.11ty.dev/) (pronounced *Eleventy*).
 
-11ty is a static generator built with JavaScript and supports a wide variety of templating languages including Markdown. It is able to simply generate HTML into a folder of your liking, which was just what I was looking for. Here are some of the resources I used in addition to the generator's documentation: 
+11ty is a static site generator built with JavaScript and supports a wide variety of templating languages including Markdown. It is able to simply generate HTML into a folder of your liking, which was just what I was looking for. Here are some of the resources I used in addition to the generator's documentation: 
 
 * [https://github.com/11ty/eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 * [https://github.com/ianrose/deventy](https://github.com/ianrose/deventy)

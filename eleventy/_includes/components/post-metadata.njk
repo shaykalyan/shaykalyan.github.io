@@ -1,7 +1,8 @@
 <div class="post-metadata row">
     <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
-        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+        <time datetime="{{ (post.date or page.date) | dateIso }}">{{ (post.date or page.date) | dateReadable }}</time>
+        {# {{ post | log }} #}
     </div>
     <div class="post-tags link-alternate col-xs-12 col-sm-auto">
         <span class="icon icon-price-tags"></span>
