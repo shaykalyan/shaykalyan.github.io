@@ -3,18 +3,21 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "grunt-contrib-compass": "^0.7.2",
-    "grunt-contrib-connect": "^2.1.0",
-    "grunt-contrib-watch": "^1.1.0"
+  "dependencies": {},
+  "scripts": {
+    "sass": "node-sass --watch scss -output stylesheets",
+    "serve": "live-server --port=9000 --ignore=node_modules,scss,eleventy --no-css-inject",
+    "blog": "eleventy --watch",
+    "dev": "concurrently npm:sass npm:blog npm:serve"
   },
-  "scripts": {},
-  "author": "xShay",
+  "author": "Shay Kalyan",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "grunt": "^1.1.0",
-    "moment": "^2.26.0"
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
+    "moment": "^2.26.0",
+    "node-sass": "^4.14.1"
   }
 }

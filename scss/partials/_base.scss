@@ -83,7 +83,7 @@ a {
 }
 
 #twitter {
-    @include box-shadow(0px -2px 5px -2px #555555);
+    box-shadow: 0px -2px 5px -2px #555555;
     padding-top: 30px;
     padding-bottom: 10px;
 
@@ -128,11 +128,11 @@ a {
         width: 100%;
         background-color: $color-gray-alpha;
 
-        @include transition(all 0.5s ease);
-        @include border-radius(50%);
+        transition: all 0.5s ease;
+        border-radius: 50%;
 
         &:hover {
-            @include filter(grayscale(0%));
+            filter: grayscale(0%);
         }
 
         @media (max-width: $width-sm) {
@@ -145,7 +145,6 @@ a {
 #contact {
     margin-top: 30px;
     padding-bottom: 0px;
-    // @include box-shadow(0px 2px 5px -2px #555555);
 
     @media (min-width: $width-sm) {
         padding-bottom: 40px;
@@ -176,7 +175,7 @@ a {
 
     span {
         color: #333333;
-        @include transition(color 0.3s ease);
+        transition: color 0.3s ease;
         &:hover {
             color: $color-blue;
         }

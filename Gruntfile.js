@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
@@ -23,20 +23,20 @@ module.exports = function(grunt) {
       html: {
         files: './*.html',
         options: {
-            livereload: true
+          livereload: true
         }
       },
       js: {
         files: './js/*.js',
         options: {
-            livereload: true
+          livereload: true
         }
       }
     },
 
     connect: {
       all: {
-        options:{
+        options: {
           port: 9000,
           base: './'
         }
@@ -50,6 +50,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task(s).
-  grunt.registerTask('default', ['compass', 'connect', 'watch']);
+  // grunt.registerTask('default', ['compass', 'connect', 'watch']);
+  grunt.registerTask('default', ['connect', 'watch']);
 
 };
