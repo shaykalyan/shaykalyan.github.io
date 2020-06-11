@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "scripts": {
-    "sass": "node-sass --watch scss -output stylesheets",
+    "sass": "node-sass --watch scss --output stylesheets",
     "serve": "live-server --port=9000 --ignore=node_modules,scss,eleventy --no-css-inject",
     "blog": "eleventy --watch",
     "dev": "concurrently npm:sass npm:blog npm:serve"

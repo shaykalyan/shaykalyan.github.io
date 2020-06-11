@@ -282,7 +282,6 @@ template {
 [hidden] {
   display: none !important; }
 
-/*# sourceMappingURL=bootstrap-reboot.css.map */
 /*!
  * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -3316,7 +3315,6 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-/*# sourceMappingURL=bootstrap-grid.css.map */
 @font-face {
   font-family: "sofia-prolight";
   src: url("../fonts/sofiaprolight-webfont.eot");
