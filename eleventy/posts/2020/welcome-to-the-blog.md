@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 tags: ['meta']
 title: Welcome to the blog
-date: 2019-05-31 18:00:00.00 -7
+date: 2020-05-31 18:00:00.00 -7
 ---
 The internet has made it more accessible than ever for folks to ask questions, share knowledge, and collaborate. And I've got to admit, without it, I wouldn't be where I am today doing the things I do. I figured it was due time I created a space to give back, even if it ends up with me just blabbering into the void 🤷🏼‍♂️.
 ---
