@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", require("./eleventy/js/getTagsList.js"));
 
+  eleventyConfig.addPassthroughCopy("./eleventy/images");
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
