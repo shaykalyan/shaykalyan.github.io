@@ -3601,6 +3601,11 @@ a.link-alternate {
 .post-frontmatter {
   margin-bottom: 1.5rem; }
 
+.post-content img {
+  border: solid 5px rgba(27, 161, 226, 0.2);
+  display: block;
+  margin: auto; }
+
 #tags-list li {
   margin: 1rem 0; }
 
