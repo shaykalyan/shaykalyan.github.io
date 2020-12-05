@@ -233,6 +233,14 @@ a {
     margin-bottom: 1.5rem;
 }
 
+.post-content {
+    img {
+        border: solid 5px $color-blue-alpha;
+        display: block;
+        margin: auto;
+    }
+}
+
 #tags-list {
     li {
         margin: 1rem 0;
