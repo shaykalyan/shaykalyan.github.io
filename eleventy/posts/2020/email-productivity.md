@@ -3,6 +3,7 @@ layout: layouts/post.njk
 tags: ['productivity']
 title: Have a new Outlook on productivity
 description: A quick post about some of the Outlook features I use to stay on top of my inbox
+previewImageName: email-productivity.png
 date: 2020-12-5 18:00:00.00 -7
 ---
 A quick post about some of the Outlook features I use including rules, categories, and search folders to stay on top of the thousands of emails that hit my work inbox on the daily!
@@ -23,7 +24,7 @@ Referring to the image above, you'll see folders I've favorited with names that 
 * Place mail that is sent _from_ a particular identity to their respective folder.
   * This scenario helps to deal with automated mail that is sent to a DG that I'm already sorting into a folder, but I need to special case them for some reason. For example, my wider team DG will get Pull Request notification emails for our mono-repo, so I configure a rule to key off the subject line when an email arrives from Azure DevOps and starts with "PR". 
   * I also have rules for service alerts that get dumped into a folder, but if there is a reply, i.e., the thread's subject starts with "RE:", then I can surface them to a dedicated folder to get visibility into issues that have evolved into an actual conversation. 
-* Place any other mail that have me in the _To_ or _CC_ go in the _Important_ folder.
+* Place any other mail that have me in the _To_ or _CC_ in the _Important_ folder.
 * Keep the rest in the regular _Inbox_ folder that I can triage through as needed.
 
 > Note that the above list is not in the order that they would need to be evaluated from a rule processing perspective.

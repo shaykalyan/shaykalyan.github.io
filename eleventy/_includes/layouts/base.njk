@@ -32,6 +32,9 @@
             property="og:description" 
             content="{{ description or renderData.description or "The personal website of Shay Kalyan – a Software Engineer based in Seattle, WA" }}">
 
+        <meta property="og:image" content="https://shaykalyan.com/blog/images/previews/{{ previewImageName }}" />
+        <meta name="twitter:image" content="https://shaykalyan.com/blog/images/previews/{{ previewImageName }}" />
+
         <link rel="stylesheet" href="/stylesheets/screen.css">
     </head>
 
