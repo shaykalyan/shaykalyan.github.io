@@ -3604,7 +3604,8 @@ a.link-alternate {
 .post-content img {
   border: solid 5px rgba(27, 161, 226, 0.2);
   display: block;
-  margin: auto; }
+  margin: auto;
+  max-width: 100%; }
 
 #tags-list li {
   margin: 1rem 0; }
