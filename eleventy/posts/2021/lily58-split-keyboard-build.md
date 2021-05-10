@@ -50,7 +50,7 @@ As I mentioned, this was going to be my first real foray into a hardware project
 
 📺 [Lily58 Pro Custom Mechanical Keyboard with nice!nanos Build Stream](https://www.youtube.com/watch?v=kRrzfWv39G4) by Nicell. A full build stream that was handy to skim through to see how specific components come together while I was following the written guide.
 
-📺 [How to Make a Corne Split Keyboard](https://www.youtube.com/watch?v=kRrzfWv39G4) by
+📺 [How to Make a Corne Split Keyboard](https://www.youtube.com/watch?v=2xmAIC0CmGM) by
 Nate the Maker. While this is not a Lily58 build video, the steps are more or less the same and a great short video to get a grasp of the overall build procedure.
 
 📝 [Lily58 Pro Build Guide](https://github.com/keyhive/build_guides/blob/master/docs/keyboards/lily58pro.md) by Keyhive. This was the primary guide I followed for putting together the keyboard. The only point I deviated was to first flash the microcontroller with QMK before I got started with the build as it's a good idea to make sure the ones that get shipped boot up and connect! Oh, and my build doesn't have any OLED screens to install so I skipped that bit. 
