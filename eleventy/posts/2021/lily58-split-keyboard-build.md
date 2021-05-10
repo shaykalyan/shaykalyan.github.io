@@ -95,7 +95,7 @@ With the QMK Toolbox route, the setup was as simple as:
 2. Pick `lily58/rev1` from the keyboard dropdown and hit _Load_ to pull a copy of the firmware. This includes the [default keymap as described in the repo](https://github.com/qmk/qmk_firmware/blob/master/keyboards/lily58/keymaps/default/keymap.c).
 3. Plug in one of the microcontrollers and let the tool pick it up. Out of the box, the controllers were already in DFU (Device Firmware Upgrade) mode for me. Hit *Flash* and let it do its thing! Unplug then repeat for the other controller.
 
-![QMK Toolbox](../../../images/2021/qmktoolbox.png)
+![QMK Toolbox](../../../images/2021/QMKToolbox.png)
 
 The microcontrollers should both be good to go! A quick note here is that once both sides are flashed, you only need to flash the primary side with iterative updates going forward unless there are changes to the underlying split keyboard code.
 
