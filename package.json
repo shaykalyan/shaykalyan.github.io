@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
   "scripts": {
-    "sass": "node-sass --watch scss --output stylesheets",
-    "serve": "live-server --port=9000 --ignore=node_modules,scss,eleventy --no-css-inject",
+    "sass": "sass scss/:stylesheets/",
+    "serve": "five-server --port=9000 --ignore=node_modules,scss,eleventy --no-css-inject",
     "blog": "eleventy --watch",
     "dev": "concurrently npm:sass npm:blog npm:serve"
   },
@@ -15,9 +14,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "concurrently": "^5.3.0",
-    "live-server": "^1.2.1",
+    "concurrently": "^6.5.1",
+    "five-server": "^0.1.2",
     "moment": "^2.29.1",
-    "node-sass": "^4.14.1"
+    "sass": "^1.45.2"
   }
 }
