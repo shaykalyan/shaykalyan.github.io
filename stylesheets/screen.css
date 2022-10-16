@@ -5657,6 +5657,10 @@ pre[class*=language-] {
   color: green;
 }
 
+code {
+  padding: 0.2em !important;
+}
+
 code[class*=language-], code,
 pre[class*=language-] {
   font-size: 1rem;
