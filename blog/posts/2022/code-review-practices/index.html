@@ -23,8 +23,8 @@
         <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
 
-        <title>My code review habits | Blog</title>
-        <meta property="og:title" content="My code review habits | Blog"/>
+        <title>Review the code, not the coder | Blog</title>
+        <meta property="og:title" content="Review the code, not the coder | Blog"/>
         <meta 
             name="description" 
             content="Some practices I like to follow to make code reviews painless and judgement free"/>
@@ -70,7 +70,7 @@
     <div>
       <div class="row post-frontmatter">
         <div class="col-sm-12">
-          <h1>My code review habits</h1>
+          <h1>Review the code, not the coder</h1>
           <div class="post-metadata row">
     <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
@@ -101,7 +101,7 @@
       <div class="col-sm-12">
         <p>Code Reviews (CR), also referred to as Pull Requests (PR), need no introduction if you're familiar with writing and collaborating on code. In this post, I don't plan to spend time on describing the benefits of this practice, but I will describe some of the habits I've picked up over my time working in environment that I feel help aid in pushing through PRs swiftly, reducing friction for reviewers, and ending up with better code at the end!</p>
 <h2>Title and description</h2>
-<p>The title and description are probably one of the most important bits of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the why and the context behind it. Having worked in a couple of large codebases now, spanning at least a couple of years in each, I've lost count the number of times I've relied on past PR descriptions to remind me of the motivation behind changes and understand the context better. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? A quick <code>git blame</code> lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked.</p>
+<p>The title and description are probably one of the most important bits of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the why and the context behind it. Having worked in a couple of large codebases now, spanning at least a couple of years in each, I've lost count the number of times I've relied on past PR descriptions to remind me of the motivation behind changes and understand the context better. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? A quick <code>git blame</code> lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked!</p>
 <h4>Title</h4>
 <p>For the title, I'd advocate to follow some of the practices Chris outlines in their post on <a href="https://cbea.ms/git-commit/">How to Write a Git Commit Message</a>, specifically using imperative mood:</p>
 <blockquote>
@@ -122,8 +122,9 @@
 <p>The <em>Changes</em> section is where I list the high level changes being made. If there are several touch points, I typically describe them in an order that makes sense, for example, if changes in X depends on changes in Y, I'd describe them in that order.</p>
 <p>I'll also add other sections depending on what's going on. For example, I'll call out a Todo section to inform the reviewer that there are other pieces that are still to be done, state what they are, and whether they are to be done before the PR completes or as follow ups. A similar <em>Out of Scope</em> section would describe changes that the reviewer might think to ask for but can be called out that it's not in scope of the deliverable or the PR.</p>
 <h2>Reviewing your own code</h2>
-<p>Once I've the PR created and published, the first thing I do is go through and review the code myself. Of course I've done the diff myself and reviewed it prior, but this extra pass through serves another purpose: asking specific questions to reviewers or to give even more context in the code patches itself! I often leave behind comments prefixed with <code>**FYI**: ...</code> to give more detail to clarify any potential sources of confusion, or just simply say, <em>hey, this massive red patch was just moved to another file</em>-- do my best to reduce the cognitive overhead for the reviewer 'cos I really want that green tick-- selfish.. or smart?! 🤔</p>
+<p>Once I've the PR created and published, the first thing I do is go through and review the code myself. Of course I've done the diff myself and reviewed it prior to the push, but this extra pass through serves another purpose: asking specific questions to reviewers or to give even more context among in the code patches itself! I often leave behind comments prefixed with <code>**FYI**: ...</code> to give more detail to clarify any potential sources of confusion, or just simply say, <em>hey, this massive red patch was just moved to another file</em>-- do my best to reduce the cognitive overhead for the reviewer 'cos I really want that green tick-- selfish.. or smart?! 🤔</p>
 <h2>Reviewing others code</h2>
+<p>This next</p>
 
       </div>
     </div>

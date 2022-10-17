@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 tags: ['productivity', 'work']
-title: My code review habits
+title: Review the code, not the coder
 description: Some practices I like to follow to make code reviews painless and judgement free
 previewImageName: lily58-build.png
 date: 2022-10-08 18:00:00.00 -7
@@ -10,7 +10,7 @@ Code Reviews (CR), also referred to as Pull Requests (PR), need no introduction 
 ---
 
 ## Title and description
-The title and description are probably one of the most important bits of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the why and the context behind it. Having worked in a couple of large codebases now, spanning at least a couple of years in each, I've lost count the number of times I've relied on past PR descriptions to remind me of the motivation behind changes and understand the context better. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? A quick `git blame` lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked. 
+The title and description are probably one of the most important bits of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the why and the context behind it. Having worked in a couple of large codebases now, spanning at least a couple of years in each, I've lost count the number of times I've relied on past PR descriptions to remind me of the motivation behind changes and understand the context better. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? A quick `git blame` lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked! 
 
 #### Title
 For the title, I'd advocate to follow some of the practices Chris outlines in their post on [How to Write a Git Commit Message](https://cbea.ms/git-commit/), specifically using imperative mood: 
@@ -47,8 +47,8 @@ The *Changes* section is where I list the high level changes being made. If ther
 I'll also add other sections depending on what's going on. For example, I'll call out a Todo section to inform the reviewer that there are other pieces that are still to be done, state what they are, and whether they are to be done before the PR completes or as follow ups. A similar *Out of Scope* section would describe changes that the reviewer might think to ask for but can be called out that it's not in scope of the deliverable or the PR. 
 
 ## Reviewing your own code
-Once I've the PR created and published, the first thing I do is go through and review the code myself. Of course I've done the diff myself and reviewed it prior, but this extra pass through serves another purpose: asking specific questions to reviewers or to give even more context in the code patches itself! I often leave behind comments prefixed with `**FYI**: ...` to give more detail to clarify any potential sources of confusion, or just simply say, *hey, this massive red patch was just moved to another file*-- do my best to reduce the cognitive overhead for the reviewer 'cos I really want that green tick-- selfish.. or smart?! 🤔
+Once I've the PR created and published, the first thing I do is go through and review the code myself. Of course I've done the diff myself and reviewed it prior to the push, but this extra pass through serves another purpose: asking specific questions to reviewers or to give even more context among in the code patches itself! I often leave behind comments prefixed with `**FYI**: ...` to give more detail to clarify any potential sources of confusion, or just simply say, *hey, this massive red patch was just moved to another file*-- do my best to reduce the cognitive overhead for the reviewer 'cos I really want that green tick-- selfish.. or smart?! 🤔
 
 
 ## Reviewing others code
-
+This next 
