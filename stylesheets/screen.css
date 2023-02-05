@@ -5266,6 +5266,9 @@ a.link-alternate:hover {
   left: -10px;
 }
 
+#about {
+  margin-top: 40px;
+}
 #about img {
   display: block;
   margin: auto;
