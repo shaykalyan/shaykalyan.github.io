@@ -49,7 +49,7 @@ I'll also add other sections as needed. For example, I'll call out a *Todo* sect
 ## Reviewing your own code
 Once the PR is created and published, the first thing I do is go through it myself. This additional pass through serves a specific purpose: to ask questions to reviewers and to give even more context among the code patches themselves. I often leave behind comments prefixed with `**FYI**: ...` to give more detail to clarify any potential sources of confusion, or just simply say, *hey, this massive red patch was just moved to another file, don't worry about it*. Do your best to reduce the cognitive overhead for the reviewer because the reality is that we just want that green tick and move on -- selfish.. or smart?! 🤔
 
-## Reviewing others code
+## Reviewing others' code
 Being able to review a PR is as equally as important of a skill as authoring your own. As a recipient of feedback, it can be difficult to not feel as if comments are a personal attack, so *how* comments and feedback is written is crucial to having a healthy team environment and maintain the overall sense of collaboration towards better code. Another issue with leaving comments is that they are often all read as of equal importance, whereas that's rarely ever the case.
 
 A way to tackle both of those concerns is to prefix the comments left behind so that the author of the code can understand when something is just a nit-pick and when there's a fundamental design issue or bug that needs addressing. Here's a few that I use:
