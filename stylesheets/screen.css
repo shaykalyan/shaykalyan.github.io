@@ -5089,8 +5089,8 @@ a:hover {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?scbv3r");
-  src: url("../fonts/icomoon.eot?scbv3r#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?scbv3r") format("truetype"), url("../fonts/icomoon.woff?scbv3r") format("woff"), url("../fonts/icomoon.svg?scbv3r#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?ltvcc4");
+  src: url("../fonts/icomoon.eot?ltvcc4#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ltvcc4") format("truetype"), url("../fonts/icomoon.woff?ltvcc4") format("woff"), url("../fonts/icomoon.svg?ltvcc4#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -5098,7 +5098,7 @@ a:hover {
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -5107,6 +5107,10 @@ a:hover {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-threads:before {
+  content: "\e900";
 }
 
 .icon-price-tags:before {
@@ -5129,16 +5133,8 @@ a:hover {
   content: "\ea7e";
 }
 
-.icon-facebook:before {
-  content: "\ea90";
-}
-
 .icon-instagram:before {
   content: "\ea92";
-}
-
-.icon-twitter:before {
-  content: "\ea96";
 }
 
 .icon-github:before {
