@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="/images/favicons/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="/images/favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+
+        <title>Review the code, not the coder | Blog</title>
+        <meta property="og:title" content="Review the code, not the coder | Blog"/>
+        <meta 
+            name="description" 
+            content="Some practices I like to follow to make code reviews more efficient and collaborative"/>
+        <meta 
+            property="og:description" 
+            content="Some practices I like to follow to make code reviews more efficient and collaborative">
+
+        <meta property="og:image" content="https://shaykalyan.com/blog/images/previews/review-the-code-preview.png"/>
+        <meta name="twitter:image" content="https://shaykalyan.com/blog/images/previews/review-the-code-preview.png"/>
+
+        <link rel="stylesheet" href="/stylesheets/screen.css">
+    </head>
+
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 logo" onclick="location.href='/';" style="cursor: pointer;">
+                        <img src="/images/logo.svg" alt="Logo">
+                    </div>
+                    <a href="#0" class="nav-trigger">
+                        <span></span></a>
+                    <div id="nav" class="col-sm-10 links">
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/blog" class="active">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/cv.pdf" class="link-external" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="blog-content">
+            <div class="container">
+  <article>
+    <div>
+      <div class="row post-frontmatter">
+        <div class="col-sm-12">
+          <h1>Review the code, not the coder</h1>
+          <div class="post-metadata row">
+    <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
+        <span class="icon icon-calendar"></span>
+        <time datetime="2023-02-13T01:00:00.000Z">February 12, 2023</time>
+        
+    </div>
+    <div class="post-tags link-alternate col-xs-12 col-sm-auto">
+        <span class="icon icon-price-tags"></span>
+        
+            <span class="post-metadata-tag">
+                <a href="/blog/tags/productivity" class="link-alternate">
+                    productivity
+                </a>
+            </span>
+        
+            <span class="post-metadata-tag">
+                <a href="/blog/tags/work" class="link-alternate">
+                    work
+                </a>
+            </span>
+        
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row post-content">
+      <div class="col-sm-12">
+        <p>Code Reviews (CRs), or Pull Requests (PRs), need no introduction if you're familiar with writing and collaborating on code. The benefits of this practice have been well articulated across various mediums, and in this post I will describe some of the habits I've picked up that help in pushing through PRs swiftly and reducing friction for both authors and reviewers.</p>
+<h2>The basics: a title and description</h2>
+<p>The title and description together is the most important piece of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the <em>why</em> and the context behind it all. Having worked in a couple of large codebases now, spanning at least a couple of years in each, there have been numerous occasions where past PR descriptions have reminded me of the motivation and context behind changes. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? Without knowing the immediate answer, a quick <code>git blame</code> lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked!</p>
+<h4>Title</h4>
+<p>For the title, I'd advocate to follow some of the practices Chris outlines in their post on <a href="https://cbea.ms/git-commit/">How to Write a Git Commit Message</a>, specifically using the imperative mood:</p>
+<blockquote>
+<p>If applied, this commit will &lt;<em>your subject line here</em>&gt;</p>
+</blockquote>
+<p>Another practice I follow, more so important in a <a href="https://en.wikipedia.org/wiki/Monorepo">monorepo</a> or one with multiple projects, is to prefix the title with the service(s) or module(s) being touched. This helps everyone looking at the page of open PRs identify areas that they might be best to check out if not already assigned to them, or during the review of commit history of a build when narrowing down what's causing the outage in service <em>XYZ</em>. Some examples:</p>
+<ul>
+<li><code>[Billing] Add refund v2 endpoint</code></li>
+<li><code>[Cart, Cart.Shared] Update refund UX and shared components</code></li>
+<li><code>[Terraform] Increase Redis shard count in WUS2</code></li>
+</ul>
+<p>This isn't always perfect, and if there are too many touch points to list then it's fine to simply list it as <code>[Many] ...</code>. But it's so much better than just having <code>Fix unhandled exception bug</code>, which may as well have been an empty message!</p>
+<h4>Description</h4>
+<p>Chris also states to use the description to share the <em>why</em>. This is also a great spot to give as much information to your reviewers and make their job easy-- we're all looking for that green ✅, so any opportunity to reduce that friction is going to only benefit you!</p>
+<p>A typical template I follow looks like:</p>
+<pre class="language-md"><code class="language-md"><span class="token title important"><span class="token punctuation">###</span> Context</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br><span class="token title important"><span class="token punctuation">###</span> Changes</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br>// ... other sections like "Validation", "Todo", "Out of Scope" etc. as needed.</code></pre>
+<p>The <em>Context</em> section is where I write the purpose of the the PR. If things are being changed that reviewers unlikely to be familiar with, I describe it here and link to past PRs to provide even more insights, e.g., if the changes proposed are building on top of or is in response to a previous change. It sounds pretty obvious, but the more context you can give to your reviewer, the less time you'll spend going back and forth answering questions for reviewers trying to understand why the changes are being made.</p>
+<p>The <em>Changes</em> section is where I list the high level changes being made. If there are several touch points, I typically describe them in an order that makes sense, e.g., if changes in X depends on changes in Y, I'd describe them in that order.</p>
+<p>I'll also add other sections as needed. For example, I'll call out a <em>Todo</em> section to inform the reviewer that there are other pieces that are still to be done, state what they are, and whether they are to be done before the PR completes or as follow ups. A similar <em>Out of Scope</em> section would describe changes that the reviewer might think to ask for but can be called out that it's not in scope of the work item or the PR and why that is.</p>
+<h2>Reviewing your own code</h2>
+<p>Once the PR is created and published, the first thing I do is go through it myself. This additional pass through serves a specific purpose: to ask questions to reviewers and to give even more context among the code patches themselves. I often leave behind comments prefixed with <code>**FYI**: ...</code> to give more detail to clarify any potential sources of confusion, or just simply say, <em>hey, this massive red patch was just moved to another file, don't worry about it</em>. Do your best to reduce the cognitive overhead for the reviewer because the reality is that we just want that green tick and move on -- selfish.. or smart?! 🤔</p>
+<h2>Reviewing others' code</h2>
+<p>Being able to review a PR is as equally as important of a skill as authoring your own. As a recipient of feedback, it can be difficult to not feel as if comments are a personal attack, so <em>how</em> comments and feedback is written is crucial to having a healthy team environment and maintain the overall sense of collaboration towards better code. Another issue with leaving comments is that they are often all read as of equal importance, whereas that's rarely ever the case.</p>
+<p>A way to tackle both of those concerns is to prefix the comments left behind so that the author of the code can understand when something is just a nit-pick and when there's a fundamental design issue or bug that needs addressing. Here's a few that I use:</p>
+<ul>
+<li><code>nit: ...</code>: a nit-pick; the author should feel free to ignore/close the comment thread as &quot;won't fix&quot;.</li>
+<li><code>bug: ...</code>: a bug that needs addressing.</li>
+<li><code>perf: ...</code>: a performance related callout.</li>
+<li><code>design: ...</code>: a comment about the code design proposed or an alternative that could be used instead.</li>
+<li><code>style: ...</code>: a style issue, which ideally should be all automated anyways!</li>
+<li><code>q: ...</code>: a question.</li>
+</ul>
+<p>Work with your team of collaborators to land on a shared understanding and usage of these prefixes, and others that may fit your processes. Note that sometimes you might even use a combo of prefixes, e.g., <code>q/bug: can this variable be null and cause &lt;unexpected outcome&gt;?</code>.</p>
+<hr>
+<p>And that's a wrap on my go-to tips for a better review experience, for both the author and reviewer!</p>
+
+      </div>
+    </div>
+  </article>
+</div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>&copy; <script>
+                                document.write(new Date().getFullYear())
+                            </script> Shay Kalyan</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m
+                    .parentNode
+                    .insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-52704851-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
