@@ -64,14 +64,15 @@
             </div>
         </nav>
 
-        <div id="blog-content">
-            <div class="container">
-  <article>
-    <div>
-      <div class="row post-frontmatter">
-        <div class="col-sm-12">
-          <h1>Review the code, not the coder</h1>
-          <div class="post-metadata row">
+        <div class="blog-content">
+            <div class="post-wrapper">
+  <div class="container">
+    <article>
+      <div>
+        <div class="row post-frontmatter">
+          <div class="col-sm-12">
+            <h1>Review the code, not the coder</h1>
+            <div class="post-metadata row">
     <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
         <time datetime="2023-02-13T01:00:00.000Z">February 12, 2023</time>
@@ -94,12 +95,12 @@
         
     </div>
 </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row post-content">
-      <div class="col-sm-12">
-        <p>Code Reviews (CRs), or Pull Requests (PRs), need no introduction if you're familiar with writing and collaborating on code. The benefits of this practice have been well articulated across various mediums, and in this post I will describe some of the habits I've picked up that help in pushing through PRs swiftly and reducing friction for both authors and reviewers.</p>
+      <div class="row post-content">
+        <div class="col-sm-12">
+          <p>Code Reviews (CRs), or Pull Requests (PRs), need no introduction if you're familiar with writing and collaborating on code. The benefits of this practice have been well articulated across various mediums, and in this post I will describe some of the habits I've picked up that help in pushing through PRs swiftly and reducing friction for both authors and reviewers.</p>
 <h2>The basics: a title and description</h2>
 <p>The title and description together is the most important piece of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the <em>why</em> and the context behind it all. Having worked in a couple of large codebases now, spanning at least a couple of years in each, there have been numerous occasions where past PR descriptions have reminded me of the motivation and context behind changes. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? Without knowing the immediate answer, a quick <code>git blame</code> lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked!</p>
 <h4>Title</h4>
@@ -138,9 +139,10 @@
 <hr>
 <p>And that's a wrap on my go-to tips for a better review experience, for both the author and reviewer!</p>
 
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
         </div>
 

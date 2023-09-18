@@ -70,11 +70,14 @@ table {
     @media (min-width: $width-sm) {
         font-size: 1.25rem;
     }
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 a {
     color: $color-blue;
-    background-color: $color-blue-alpha;
 
     &:hover {
         text-decoration: none;

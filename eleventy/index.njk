@@ -9,11 +9,21 @@ pagination:
   reverse: true
   alias: posts
 ---
-<div class="container">
-  <div class="row blog-home">
-    <div class="col">
-      <h1>Latest Posts 👇🏼</h1>
-      {% include "./_includes/components/posts-list.njk" %}
+<div class="">
+  <div class="container-fluid home-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col main-title">
+          <h1>👇🏼 Latest Posts</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row blog-home">
+      <div class="col">
+        {% include "./_includes/components/posts-list.njk" %}
+      </div>
     </div>
   </div>
 </div>

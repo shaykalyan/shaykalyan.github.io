@@ -5076,10 +5076,15 @@ table {
     font-size: 1.25rem;
   }
 }
+p a,
+ul a,
+ol a,
+table a {
+  text-decoration: underline;
+}
 
 a {
   color: #1ba1e2;
-  background-color: rgba(27, 161, 226, 0.2);
 }
 a:hover {
   text-decoration: none;
@@ -5159,7 +5164,6 @@ html {
 }
 
 body {
-  background-image: url("../images/bg.png");
   background-repeat: repeat;
   width: 100%;
   font-size: 48px;
@@ -5312,6 +5316,7 @@ a.link-alternate:hover {
 .social-links a {
   background-color: transparent;
   font-size: 2rem;
+  text-decoration: none;
 }
 .social-links span {
   color: #333333;
@@ -5321,8 +5326,7 @@ a.link-alternate:hover {
   color: #1ba1e2;
 }
 
-#blog-content {
-  margin: 2rem 0;
+.blog-content {
   padding-bottom: 2rem;
 }
 
@@ -5340,6 +5344,10 @@ a.link-alternate:hover {
 }
 .blog-post-item .blog-post-item-cta {
   font-size: 0.3em;
+}
+
+.post-wrapper {
+  margin: 2rem 0;
 }
 
 .post-metadata {
@@ -5425,6 +5433,7 @@ blockquote p {
   color: #333333;
   background-color: transparent;
   border-bottom: none;
+  text-decoration: none;
 }
 .nav ul li a:hover, .nav ul li a.active {
   text-decoration: none;

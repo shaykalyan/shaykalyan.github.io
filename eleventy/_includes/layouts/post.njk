@@ -1,20 +1,22 @@
 ﻿---
 layout: layouts/base.njk
 ---
-<div class="container">
-  <article>
-    <div>
-      <div class="row post-frontmatter">
-        <div class="col-sm-12">
-          <h1>{{ title }}</h1>
-          {% include "../components/post-metadata.njk" %}
+<div class="post-wrapper">
+  <div class="container">
+    <article>
+      <div>
+        <div class="row post-frontmatter">
+          <div class="col-sm-12">
+            <h1>{{ title }}</h1>
+            {% include "../components/post-metadata.njk" %}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row post-content">
-      <div class="col-sm-12">
-        {{ content | safe }}
+      <div class="row post-content">
+        <div class="col-sm-12">
+          {{ content | safe }}
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>

@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    background-image: url("../images/bg.png");
     background-repeat: repeat;
     width: 100%;
     font-size: 48px;
@@ -173,6 +172,7 @@ a {
     a {
         background-color: transparent;
         font-size: 2rem;
+        text-decoration: none;
     }
 
     span {
@@ -184,8 +184,7 @@ a {
     }
 }
 
-#blog-content {
-    margin: 2rem 0;
+.blog-content {
     padding-bottom: 2rem;
 }
 
@@ -207,6 +206,10 @@ a {
     .blog-post-item-cta {
         font-size: 0.3em;
     }
+}
+
+.post-wrapper {
+    margin: 2rem 0;
 }
 
 .post-metadata {
