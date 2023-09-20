@@ -118,7 +118,7 @@
 <h4>Description</h4>
 <p>Chris also states to use the description to share the <em>why</em>. This is also a great spot to give as much information to your reviewers and make their job easy-- we're all looking for that green ✅, so any opportunity to reduce that friction is going to only benefit you!</p>
 <p>A typical template I follow looks like:</p>
-<pre class="language-md"><code class="language-md"><span class="token title important"><span class="token punctuation">###</span> Context</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br><span class="token title important"><span class="token punctuation">###</span> Changes</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br>// ... other sections like "Validation", "Todo", "Out of Scope" etc. as needed.</code></pre>
+<pre class="language-md"><code class="language-md"><br><span class="token title important"><span class="token punctuation">###</span> Context</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br><span class="token title important"><span class="token punctuation">###</span> Changes</span><br><span class="token list punctuation">*</span> ...<br><span class="token list punctuation">*</span> ...<br><br>// ... other sections like "Validation", "Todo", "Out of Scope" etc. as needed.<br> </code></pre>
 <p>The <em>Context</em> section is where I write the purpose of the the PR. If things are being changed that reviewers unlikely to be familiar with, I describe it here and link to past PRs to provide even more insights, e.g., if the changes proposed are building on top of or is in response to a previous change. It sounds pretty obvious, but the more context you can give to your reviewer, the less time you'll spend going back and forth answering questions for reviewers trying to understand why the changes are being made.</p>
 <p>The <em>Changes</em> section is where I list the high level changes being made. If there are several touch points, I typically describe them in an order that makes sense, e.g., if changes in X depends on changes in Y, I'd describe them in that order.</p>
 <p>I'll also add other sections as needed. For example, I'll call out a <em>Todo</em> section to inform the reviewer that there are other pieces that are still to be done, state what they are, and whether they are to be done before the PR completes or as follow ups. A similar <em>Out of Scope</em> section would describe changes that the reviewer might think to ask for but can be called out that it's not in scope of the work item or the PR and why that is.</p>
@@ -128,12 +128,12 @@
 <p>Being able to review a PR is as equally as important of a skill as authoring your own. As a recipient of feedback, it can be difficult to not feel as if comments are a personal attack, so <em>how</em> comments and feedback is written is crucial to having a healthy team environment and maintain the overall sense of collaboration towards better code. Another issue with leaving comments is that they are often all read as of equal importance, whereas that's rarely ever the case.</p>
 <p>A way to tackle both of those concerns is to prefix the comments left behind so that the author of the code can understand when something is just a nit-pick and when there's a fundamental design issue or bug that needs addressing. Here's a few that I use:</p>
 <ul>
-<li><code>nit: ...</code>: a nit-pick; the author should feel free to ignore/close the comment thread as &quot;won't fix&quot;.</li>
-<li><code>bug: ...</code>: a bug that needs addressing.</li>
-<li><code>perf: ...</code>: a performance related callout.</li>
-<li><code>design: ...</code>: a comment about the code design proposed or an alternative that could be used instead.</li>
-<li><code>style: ...</code>: a style issue, which ideally should be all automated anyways!</li>
-<li><code>q: ...</code>: a question.</li>
+<li><code>nit:</code> a nit-pick; the author should feel free to ignore/close the comment thread as &quot;won't fix&quot;.</li>
+<li><code>bug:</code> a bug that needs addressing.</li>
+<li><code>perf:</code> a performance related callout.</li>
+<li><code>design:</code> a comment about the code design proposed or an alternative that could be used instead.</li>
+<li><code>style:</code> a style issue, which ideally should be all automated anyways!</li>
+<li><code>q:</code> a question.</li>
 </ul>
 <p>Work with your team of collaborators to land on a shared understanding and usage of these prefixes, and others that may fit your processes. Note that sometimes you might even use a combo of prefixes, e.g., <code>q/bug: can this variable be null and cause &lt;unexpected outcome&gt;?</code>.</p>
 <hr>

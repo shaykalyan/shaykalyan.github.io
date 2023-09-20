@@ -29,6 +29,7 @@ Chris also states to use the description to share the _why_. This is also a grea
 A typical template I follow looks like: 
 
 ```md
+
 ### Context
 * ...
 * ...
@@ -38,6 +39,7 @@ A typical template I follow looks like:
 * ...
 
 // ... other sections like "Validation", "Todo", "Out of Scope" etc. as needed.
+ 
 ```
 
 The *Context* section is where I write the purpose of the the PR. If things are being changed that reviewers unlikely to be familiar with, I describe it here and link to past PRs to provide even more insights, e.g., if the changes proposed are building on top of or is in response to a previous change. It sounds pretty obvious, but the more context you can give to your reviewer, the less time you'll spend going back and forth answering questions for reviewers trying to understand why the changes are being made. 
@@ -54,12 +56,12 @@ Being able to review a PR is as equally as important of a skill as authoring you
 
 A way to tackle both of those concerns is to prefix the comments left behind so that the author of the code can understand when something is just a nit-pick and when there's a fundamental design issue or bug that needs addressing. Here's a few that I use:
 
-* `nit: ...`: a nit-pick; the author should feel free to ignore/close the comment thread as "won't fix".
-* `bug: ...`: a bug that needs addressing.
-* `perf: ...`: a performance related callout.
-* `design: ...`: a comment about the code design proposed or an alternative that could be used instead.
-* `style: ...`: a style issue, which ideally should be all automated anyways!
-* `q: ...`: a question.
+* `nit:` a nit-pick; the author should feel free to ignore/close the comment thread as "won't fix".
+* `bug:` a bug that needs addressing.
+* `perf:` a performance related callout.
+* `design:` a comment about the code design proposed or an alternative that could be used instead.
+* `style:` a style issue, which ideally should be all automated anyways!
+* `q:` a question.
 
 Work with your team of collaborators to land on a shared understanding and usage of these prefixes, and others that may fit your processes. Note that sometimes you might even use a combo of prefixes, e.g., `q/bug: can this variable be null and cause <unexpected outcome>?`. 
 
