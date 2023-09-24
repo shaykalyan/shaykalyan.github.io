@@ -5403,10 +5403,9 @@ table td {
 }
 
 blockquote {
-  border-left: 3px dashed #1ba1e2;
+  border-left: 4px solid #1ba1e2;
   background-color: rgba(51, 51, 51, 0.1);
   padding-left: 1rem;
-  margin-left: 1.5rem;
 }
 blockquote p {
   font-style: italic;

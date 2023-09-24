@@ -275,11 +275,9 @@ table {
 }
 
 blockquote {
-    border-left: 3px dashed $color-blue;
+    border-left: 4px solid $color-blue;
     background-color: $color-gray-alpha;
     padding-left: 1rem;
-    margin-left: 1.5rem;
-    
 
     p {
         font-style: italic;
