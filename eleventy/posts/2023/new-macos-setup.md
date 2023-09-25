@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: ['productivity', 'macos']
+tags: ['macbook', 'macos']
 title: My MacBook Setup 
 description: A quick breakdown of apps and tweaks for moving from the world of Windows to MacOS.
 previewImageName: new-macos-setup.png
@@ -113,7 +113,7 @@ There's already a lot of good info out there for developer tooling and apps, but
 * Profiles > \[Your profile\] > Keys > Key Mappings > Presets: `Natural Text Editing`
 * Keys > Hotkey > Show/hide all windows with a system-wide hotkey: `Enable`
 * Keys > Hotkey > Hotkey: ``SHIFT ⌘ ` ``
-* 
+
 
 ### Brew
 [Brew](https://brew.sh/), a package manager for various command line software as well as graphical apps via [casks](https://formulae.brew.sh/cask/).
@@ -126,4 +126,5 @@ There's already a lot of good info out there for developer tooling and apps, but
 ---
 
 I'm sure my setup with evolve over time, so I'll try and keep this page updated over the next little while! 
+
 ✌🏽
