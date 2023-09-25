@@ -4,7 +4,7 @@ tags: ['macbook', 'macos']
 title: My MacBook Setup 
 description: A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows.
 previewImageName: new-macos-setup.png
-date: 2023-09-23 18:00:00.00 -7
+date: 2023-09-25 09:00:00.00 -7
 ---
 New mac, hu dis? 😉 ---
 ---
