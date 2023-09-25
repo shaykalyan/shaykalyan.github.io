@@ -104,7 +104,8 @@ As for moving around the directories, these shortcuts are handy to know:
 ## Development
 There's already a lot of good info out there for developer tooling and apps, but I'll quickly jot a couple of things down here for future me.
 
-### iTerm2
+**iTerm2**
+
 [iTerm2](https://iterm2.com/), a terminal alternative. I set this up Quake-like with a hotkey to bring up the terminal as an overlay at the top of the screen:
 
 * Appearance > General > Exclude from Dock and ⌘ + Tab Application Switcher: `Enable`
@@ -115,7 +116,8 @@ There's already a lot of good info out there for developer tooling and apps, but
 * Keys > Hotkey > Hotkey: ``SHIFT ⌘ ` ``
 
 
-### Brew
+**Brew**
+
 [Brew](https://brew.sh/), a package manager for various command line software as well as graphical apps via [casks](https://formulae.brew.sh/cask/).
 
 * `brew install git`
