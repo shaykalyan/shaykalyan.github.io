@@ -1,60 +1,75 @@
 ---
 layout: layouts/post.njk
 tags: ['productivity', 'macos']
-title: My Mac Setup! 
-description: A quick breakdown of tweaks and apps for moving from Windows to MacOS
-previewImageName: review-the-code-preview.png
-date: 2023-09-18 18:00:00.00 -7
+title: My MacBook Setup 
+description: A quick breakdown of apps and tweaks for moving from the world of Windows to MacOS.
+previewImageName: new-macos-setup.png
+date: 2023-09-23 18:00:00.00 -7
 ---
-New Mac, hu dis? 😉
+New mac, hu dis? 😉 ---
 ---
 
-Since leaving the Microsoft world behind and the new gig handing me a MacBook, I've decided to switch my personal computing to MacOS as well by grabbing a MacBook Pro to replace both of my aging desktop and laptop devices. This page is the set of tweaks, apps, and configuration I've employed to make that transition as easy as possible. 
+I left Microsoft and started at the new gig a little under two months ago where they handed me a MacBook to work on. Now, while I've used MacOS in the past, my 2014 MacBook Pro had been running Windows for the past eight years so I had to get my bearings again and relearn a few things. Going back and forth between the OSes wasn't fun either. 
 
-If you have any tips or tricks of your own, or suggestions for things I've missed, hit me up on Threads: <a href="//threads.net/@shaykalyan">@shaykalyan</a>!
+So, to me, the decision here was a no-brainer: aging desktop and laptop machines that are long overdue for a refresh, M-series chips being as good as they are, and being tired of having to maintain an at-home and on-the-go setup.. it was time to switch my personal computing life to MacOS by picking up a MacBook Pro.
+
+This page has some of the apps I've got running and settings tweaks I've made on my machine to help make that transition be a bit easier. If you have any tips or tricks of your own, or suggestions for things I should check out, then hit me up on Threads: <a href="//threads.net/@shaykalyan">@shaykalyan</a>!
+
 
 ## The hardware
-14" Macbook Pro with the baseline M2 Pro, 32GB of RAM, and a 512GB SSD for storage. I also grabbed a [Caldigit TS3 Plus](https://www.caldigit.com/ts3-plus/) dock to plug in my monitors and peripherals, and now it's an easy swap of a USB-C between my work laptop and my personal.
+14" MacBook Pro with the baseline M2 Pro, 32GB of RAM, and a 512GB SSD for storage. 
+
+I also grabbed a [Caldigit TS3 Plus](https://www.caldigit.com/ts3-plus/) dock to plug in my monitors and peripherals, which makes it a super easy swap of a USB-C connection between my work machine and my personal.
 
 ## The Apps
-* [Rectangle app](https://rectangleapp.com/): window snapping/tiling. A pro tip is here to set up shortcuts similar to Windows, e.g., `CTRL + ⌘ + <arrow key>` for left, right, maximizing of windows. 
-* [TextPal](https://www.textpal.app/):  emojis at your fingertips with autocomplete prompting with a shortcut of your choosing, e.g., `\<start typing>`.
-* [Shottr](https://shottr.cc/): powered-up screencaps! The built-in screen capture support is fine, but this lets you perform markup and other edits easily, and have it all go straight to your clipboard— zero faff.
+Outside of the typical programs we'd all be installing, such as your favourite web browser, these are some apps that I'm finding to be essential on MacOS.
+
+* [Rectangle app](https://rectangleapp.com/): window snapping/tiling. A pro tip is here to set up shortcuts similar to Windows, e.g., `CTRL + ⌘ + <arrow key>` for left, right, and maximizing of windows. 
+* [TextPal](https://www.textpal.app/): emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., `\<start typing>`.
+* [Shottr](https://shottr.cc/): powered-up screenshots and annotating. The built-in screen capture support is *fine*, but this lets you perform markup and other edits pretty easily, and have it all go straight to your clipboard— zero faff.
 * [Kap](https://getkap.co/): easy video capture and processing out to gifs.
-* [Maccy](https://maccy.app/): clipboard manager. There are a few options out there, but this to me has the least intrusive UX. It also has support for non-text content and pinned (permanent) items. 
+* [Maccy](https://maccy.app/): clipboard manager. There are quite a few options out there, but this to me has the least intrusive UX. It also has support for non-text content like images and pinned (permanent) items. 
 * [Flow](https://flowapp.info/): a simple and effective menu-bar based pomodoro timer.
-* [Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control, there's also the paid [Bartender](https://www.macbartender.com/) app.
+* [Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid [Bartender](https://www.macbartender.com/) app.
+* [Itsycal](https://www.mowglii.com/itsycal/): cute little monthly calender in your menu-bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this! 
+* [Meeting Bar](https://meetingbar.app/): integrates with calendar and Zoom to be able to see your upcoming meetings and launch right into them with one click.
 * [Aerial](https://aerialscreensaver.github.io/): beautiful screensavers like what you'd get on Apple TV. Though the latest MacOS Sonoma is meant to bring some of that soon! 
-* [AlDente](https://apphousekitchen.com/) is a battery charge limiter app that lets you set a charge limit, e.g., 70%, after which the laptop will use the power supply. I find it especially important for my case where I'll primarily be using it docked at home and want to maintain my battery's health for as long as possible. MacOS does have an option to limit the charge at 80%, but it only goes into effect after it "learns" from your usage, and for some people, that never ends up working! There's enough discourse online around whether apps like this one is necessary, and from what I've read, it seems to work as advertised for keeping battery cycles low and overall health high, e.g., [Reddit discussion one](https://www.reddit.com/r/macbookpro/comments/rv1fv1/aldente_what_are_your_experiences_with_it/) and [Reddit discussion two](https://www.reddit.com/r/mac/comments/14509gk/thoughts_on_aldente_pro/).
+* [AlDente](https://apphousekitchen.com/): a battery charge limiter app that lets you set a charge limit, e.g., 70%, after which the laptop will use the power supply. I find it especially important for my case where I'll primarily be using my laptop docked at home and want to maintain its battery capacity and health for as long as possible. MacOS does have an option to limit the charge at 80%, but it only goes into effect after it "learns" from your usage, and for some people that never ends up working! There's enough discourse online around whether apps like this one is necessary, and from what I've read, it seems to work as advertised for keeping battery cycles low and overall health high, e.g., [Reddit discussion one](https://www.reddit.com/r/macbookpro/comments/rv1fv1/aldente_what_are_your_experiences_with_it/) and [Reddit discussion two](https://www.reddit.com/r/mac/comments/14509gk/thoughts_on_aldente_pro/).
 
 
 ## System Settings 
 Lots of out of the box defaults that don't jive with me. 
 
-### General
+**General**
+
 * Sharing > Make sure all sharing is disabled and update computer name
 
-### Appearance
+**Appearance**
+
 * Show scroll bars: `Always`
 
-### Control Center
+**Control Center**
+
 * Battery > Show Percentage: `Enable`
 
-### Display and Dock
-* Automatically hide and shock Dock: `Enable`
+**Display and Dock**
+
+* Automatically hide and show Dock: `Enable`
 * Default web browser: `<pick one>` 
 * Show recent applications in dock: `Disable`
 
-### Keyboard
+**Keyboard**
+
 * Keyboard navigation: `Enable`
-* Keyboard Shortcuts > App Shortcuts > All Applications > type in `Emoji & Symbols` and pick you shortcut, e.g., `⌘ + .` to pop up the emoji panel!
+* Keyboard Shortcuts > App Shortcuts > All Applications > type in `Emoji & Symbols` in the input box and pick you shortcut, e.g., `⌘ + .` to pop up the emoji panel!
 * Input Sources > Edit > Capitalize words automatically: `Disable`
 * Input Sources > Edit > Add period with double-space: `Disable`
 * Input Sources > Edit > Use smart quotes and dashes: `Disable`
 * Input Sources > Edit > Use `"` for double quotes
 * Input Sources > Edit > Use `'` for single quotes
 
-### Trackpad
+**Trackpad**
+
 * Secondary click: `Click or Tap with two fingers`
 * Tap to click: `Enable`
 * More Gestures > App Exposé: `Swipe down with Three Fingers`
@@ -63,7 +78,7 @@ Lots of out of the box defaults that don't jive with me.
 ## Finder Settings
 Some minor tweaks here: 
 * General > set home directory as default
-* Tags > disable these to remove the clutter
+* Tags > disable these to remove clutter
 
 As for moving around the directories, these shortcuts are handy to know: 
 * `⌘ + Shift + G`: Navigate to a path
@@ -71,3 +86,44 @@ As for moving around the directories, these shortcuts are handy to know:
 * You can also hold the `Option` key while looking at the context menu ("right click") of an item in Finder to reveal alternative selections, including having the `Copy` option become `Copy <item> as Pathname`
 
 ## Miscellaneous
+* Enable the app switcher on all displays instead of only showing it on the screen where the dock was last used ([source link](https://superuser.com/questions/670252/cmdtab-app-switcher-is-on-the-wrong-monitor/1625752#1625752))
+  
+    ```sh
+    defaults write com.apple.dock appswitcher-all-displays -bool true  
+    killall Dock
+    ```
+
+* Enable repeated keys on press and hold, instead of accessing symbol/accented characters ([source link](https://apple.stackexchange.com/questions/452748/on-macos-how-can-you-enable-repeated-keys-but-only-for-specific-apps/452755#452755))
+
+    ```sh
+    # global setting or a specific app, then restart the machine/app
+    defaults write -g ApplePressAndHoldEnabled -bool false
+    # defaults write <com.company.app> ApplePressAndHoldEnabled -bool false
+    ```
+
+## Development
+There's already a lot of good info out there for developer tooling and apps, but I'll quickly jot a couple of things down here for future me.
+
+### iTerm2
+[iTerm2](https://iterm2.com/), a terminal alternative. I set this up Quake-like with a hotkey to bring up the terminal as an overlay at the top of the screen:
+
+* Appearance > General > Exclude from Dock and ⌘ + Tab Application Switcher: `Enable`
+* Appearance > Tabs > Show tab bar even when there is only one tab: `Enable`
+* Profiles > \[Your profile\] > Window > Style: `Full-width Top of Screen`
+* Profiles > \[Your profile\] > Keys > Key Mappings > Presets: `Natural Text Editing`
+* Keys > Hotkey > Show/hide all windows with a system-wide hotkey: `Enable`
+* Keys > Hotkey > Hotkey: ``SHIFT ⌘ ` ``
+* 
+
+### Brew
+[Brew](https://brew.sh/), a package manager for various command line software as well as graphical apps via [casks](https://formulae.brew.sh/cask/).
+
+* `brew install git`
+* `brew install --cask git-credential-manager` 
+* `brew install --cask sublime-text`
+* `brew install --cask visual-studio-code` 
+
+---
+
+I'm sure my setup with evolve over time, so I'll try and keep this page updated over the next little while! 
+✌🏽

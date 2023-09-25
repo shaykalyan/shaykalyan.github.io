@@ -14,13 +14,13 @@ pre[class*="language-"] {
     overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
+:not(pre)>code[class*="language-"],
 pre[class*="language-"] {
     background: #2d2d2d;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
     padding: 0.1em 0.3em;
     border-radius: 0em;
     background-color: $color-gray-alpha;
@@ -31,5 +31,4 @@ pre[class*="language-"] {
 code[class*="language-"],
 pre[class*="language-"] {
     font-size: 0.9rem;
-    padding: 1em;
 }
