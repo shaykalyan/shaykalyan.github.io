@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 tags: ['macbook', 'macos']
 title: My MacBook Setup 
-description: A quick breakdown of apps and tweaks for moving from the world of Windows to MacOS.
+description: A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows.
 previewImageName: new-macos-setup.png
 date: 2023-09-23 18:00:00.00 -7
 ---
