@@ -9,11 +9,11 @@ date: 2023-09-23 18:00:00.00 -7
 New mac, hu dis? 😉 ---
 ---
 
-I left Microsoft and started at the new gig a little under two months ago where they handed me a MacBook to work on. Now, while I've used MacOS in the past, my 2014 MacBook Pro had been running Windows for the past eight years so I had to get my bearings again and relearn a few things. Going back and forth between the OSes wasn't fun either. 
+I left Microsoft and started at the new gig a little under two months ago where they handed me a MacBook to work on. Now, while I've used MacOS in the past, my 2014 MacBook Pro has been running Windows for the past eight years so I had to get my bearings and relearn a few things. Going back and forth between the OSes wasn't fun either. 
 
 So, to me, the decision here was a no-brainer: aging desktop and laptop machines that are long overdue for a refresh, M-series chips being as good as they are, and being tired of having to maintain an at-home and on-the-go setup.. it was time to switch my personal computing life to MacOS by picking up a MacBook Pro.
 
-This page has some of the apps I've got running and settings tweaks I've made on my machine to help make that transition be a bit easier. If you have any tips or tricks of your own, or suggestions for things I should check out, then hit me up on Threads: <a href="//threads.net/@shaykalyan">@shaykalyan</a>!
+This page has some of the apps I've got running and settings tweaks I've made on my machine to help make that transition a bit easier. If you have any tips or tricks of your own, or suggestions for things I should check out, then hit me up on Threads: <a href="//threads.net/@shaykalyan">@shaykalyan</a>!
 
 
 ## The hardware
@@ -22,18 +22,18 @@ This page has some of the apps I've got running and settings tweaks I've made on
 I also grabbed a [Caldigit TS3 Plus](https://www.caldigit.com/ts3-plus/) dock to plug in my monitors and peripherals, which makes it a super easy swap of a USB-C connection between my work machine and my personal.
 
 ## The Apps
-Outside of the typical programs we'd all be installing, such as your favourite web browser, these are some apps that I'm finding to be essential on MacOS.
+Outside of the typical programs we'd all be installing, like your favourite web browser, these are some apps that I'm finding to be essential on MacOS.
 
 * [Rectangle app](https://rectangleapp.com/): window snapping/tiling. A pro tip is here to set up shortcuts similar to Windows, e.g., `CTRL + ⌘ + <arrow key>` for left, right, and maximizing of windows. 
 * [TextPal](https://www.textpal.app/): emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., `\<start typing>`.
 * [Shottr](https://shottr.cc/): powered-up screenshots and annotating. The built-in screen capture support is *fine*, but this lets you perform markup and other edits pretty easily, and have it all go straight to your clipboard— zero faff.
-* [Kap](https://getkap.co/): easy video capture and processing out to gifs.
-* [Maccy](https://maccy.app/): clipboard manager. There are quite a few options out there, but this to me has the least intrusive UX. It also has support for non-text content like images and pinned (permanent) items. 
-* [Flow](https://flowapp.info/): a simple and effective menu-bar based pomodoro timer.
+* [Kap](https://getkap.co/): easy video capture and processing of them out to gifs.
+* [Maccy](https://maccy.app/): clipboard manager. There are quite a few options out there, but I find this to have the least intrusive UX. It also has support for pinned (permanent) items and non-text content like images. 
+* [Flow](https://flowapp.info/): a simple and effective menu bar based pomodoro timer.
 * [Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid [Bartender](https://www.macbartender.com/) app.
-* [Itsycal](https://www.mowglii.com/itsycal/): cute little monthly calender in your menu-bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this! 
-* [Meeting Bar](https://meetingbar.app/): integrates with calendar and Zoom to be able to see your upcoming meetings and launch right into them with one click.
-* [Aerial](https://aerialscreensaver.github.io/): beautiful screensavers like what you'd get on Apple TV. Though the latest MacOS Sonoma is meant to bring some of that soon! 
+* [Itsycal](https://www.mowglii.com/itsycal/): cute little monthly calender in your menu bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this! 
+* [Meeting Bar](https://meetingbar.app/): integrates with calendar and meeting services like Zoom to be able to see your upcoming meetings and launch right into them with one click.
+* [Aerial](https://aerialscreensaver.github.io/): beautiful screensavers like what you'd get on Apple TV. Though the latest MacOS Sonoma is meant to bring some of that natively! 
 * [AlDente](https://apphousekitchen.com/): a battery charge limiter app that lets you set a charge limit, e.g., 70%, after which the laptop will use the power supply. I find it especially important for my case where I'll primarily be using my laptop docked at home and want to maintain its battery capacity and health for as long as possible. MacOS does have an option to limit the charge at 80%, but it only goes into effect after it "learns" from your usage, and for some people that never ends up working! There's enough discourse online around whether apps like this one is necessary, and from what I've read, it seems to work as advertised for keeping battery cycles low and overall health high, e.g., [Reddit discussion one](https://www.reddit.com/r/macbookpro/comments/rv1fv1/aldente_what_are_your_experiences_with_it/) and [Reddit discussion two](https://www.reddit.com/r/mac/comments/14509gk/thoughts_on_aldente_pro/).
 
 
@@ -42,7 +42,7 @@ Lots of out of the box defaults that don't jive with me.
 
 **General**
 
-* Sharing > Make sure all sharing is disabled and update computer name
+* Sharing > Make sure all sharing is disabled and update the computer name
 
 **Appearance**
 
@@ -127,6 +127,6 @@ There's already a lot of good info out there for developer tooling and apps, but
 
 ---
 
-I'm sure my setup with evolve over time, so I'll try and keep this page updated over the next little while! 
+I'm sure my setup with evolve over time so I'll try and keep this page updated over the next little while! 
 
 ✌🏽
