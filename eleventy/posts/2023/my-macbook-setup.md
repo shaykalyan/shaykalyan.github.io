@@ -61,7 +61,7 @@ Lots of out of the box defaults that don't jive with me.
 **Keyboard**
 
 * Keyboard navigation: `Enable`
-* Keyboard Shortcuts > App Shortcuts > All Applications > type in `Emoji & Symbols` in the input box and pick you shortcut, e.g., `⌘ + .` to pop up the emoji panel!
+* Keyboard Shortcuts > App Shortcuts > All Applications > type in `Emoji & Symbols` in the input box and pick your shortcut, e.g., `⌘ + .` to pop up the emoji panel!
 * Input Sources > Edit > Capitalize words automatically: `Disable`
 * Input Sources > Edit > Add period with double-space: `Disable`
 * Input Sources > Edit > Use smart quotes and dashes: `Disable`
@@ -70,8 +70,9 @@ Lots of out of the box defaults that don't jive with me.
 
 **Trackpad**
 
-* Secondary click: `Click or Tap with two fingers`
-* Tap to click: `Enable`
+* Point & Click > Secondary click: `Click or Tap with two fingers`
+* Point & Click > Tap to click: `Enable`
+* Scroll & Zoom > Smart zoom: `Disable` <sup>(removes the lag on the two finger secondary click!)</sup>
 * More Gestures > App Exposé: `Swipe down with Three Fingers`
 * More Gestures > Launchpad: `Disable`
 
@@ -130,3 +131,6 @@ There's already a lot of good info out there for developer tooling and apps, but
 I'm sure my setup with evolve over time so I'll try and keep this page updated over the next little while! 
 
 ✌🏽
+
+
+> 2023/10/15: Added note on disabling _Smart zoom_
