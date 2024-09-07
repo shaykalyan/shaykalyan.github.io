@@ -135,4 +135,4 @@ I'm sure my setup with evolve over time so I'll try and keep this page updated o
 ✌🏽
 
 > 2023/10/15: Added note on disabling _Smart zoom_  
-> 2024/09/7: Added *Menu Bar Spacing*, called out *TextPal* is no more
+> 2024/09/7: Added *Menu Bar Spacing*, called out *TextPal* is no more, linked to *CleanShot X* as a paid alternative
