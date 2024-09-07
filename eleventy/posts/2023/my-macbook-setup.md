@@ -25,12 +25,14 @@ I also grabbed a [Caldigit TS3 Plus](https://www.caldigit.com/ts3-plus/) dock to
 Outside of the typical programs we'd all be installing, like your favourite web browser, these are some apps that I'm finding to be essential on MacOS.
 
 * [Rectangle app](https://rectangleapp.com/): window snapping/tiling. A pro tip is here to set up shortcuts similar to Windows, e.g., `CTRL + ⌘ + <arrow key>` for left, right, and maximizing of windows. 
-* [TextPal](https://www.textpal.app/): emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., `\<start typing>`.
+* ~~[TextPal](https://www.textpal.app/): emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., `\<start typing>`.~~ Discontinued 😞— give [Rocket](https://matthewpalmer.net/rocket/) a go instead! 
 * [Shottr](https://shottr.cc/): powered-up screenshots and annotating. The built-in screen capture support is *fine*, but this lets you perform markup and other edits pretty easily, and have it all go straight to your clipboard— zero faff.
+  * [CleanShot X](https://cleanshot.com/) is what I've been using and it's excellent. Requires a paid license, though! 
 * [Kap](https://getkap.co/): easy video capture and processing of them out to gifs.
 * [Maccy](https://maccy.app/): clipboard manager. There are quite a few options out there, but I find this to have the least intrusive UX. It also has support for pinned (permanent) items and non-text content like images. 
 * [Flow](https://flowapp.info/): a simple and effective menu bar based pomodoro timer.
 * [Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid [Bartender](https://www.macbartender.com/) app.
+* [Menu Bar Spacing](https://sindresorhus.com/menu-bar-spacing): Adjust the spacing and padding of the menu bar icons to be able to see more before that pesky notch gets in the way.
 * [Itsycal](https://www.mowglii.com/itsycal/): cute little monthly calender in your menu bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this! 
 * [Meeting Bar](https://meetingbar.app/): integrates with calendar and meeting services like Zoom to be able to see your upcoming meetings and launch right into them with one click.
 * [Aerial](https://aerialscreensaver.github.io/): beautiful screensavers like what you'd get on Apple TV. Though the latest MacOS Sonoma is meant to bring some of that natively! 
@@ -132,5 +134,5 @@ I'm sure my setup with evolve over time so I'll try and keep this page updated o
 
 ✌🏽
 
-
-> 2023/10/15: Added note on disabling _Smart zoom_
+> 2023/10/15: Added note on disabling _Smart zoom_  
+> 2024/09/7: Added *Menu Bar Spacing*, called out *TextPal* is no more
