@@ -31,8 +31,9 @@ Outside of the typical programs we'd all be installing, like your favourite web 
 * [Kap](https://getkap.co/): easy video capture and processing of them out to gifs.
 * [Maccy](https://maccy.app/): clipboard manager. There are quite a few options out there, but I find this to have the least intrusive UX. It also has support for pinned (permanent) items and non-text content like images. 
 * [Flow](https://flowapp.info/): a simple and effective menu bar based pomodoro timer.
-* [Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid [Bartender](https://www.macbartender.com/) app.
-* [Menu Bar Spacing](https://sindresorhus.com/menu-bar-spacing): Adjust the spacing and padding of the menu bar icons to be able to see more before that pesky notch gets in the way.
+* ~~[Hidden Bar](https://github.com/dwarvesf/hidden#-install): simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid [Bartender](https://www.macbartender.com/) app.~~
+* ~~[Menu Bar Spacing](https://sindresorhus.com/menu-bar-spacing): Adjust the spacing and padding of the menu bar icons to be able to see more before that pesky notch gets in the way.~~
+* [Ice](https://github.com/jordanbaird/Ice) is a neat new alternative for managing your menu bar overflow of icons. It has a few more options including the ability to tweak the spacing of icons.
 * [Itsycal](https://www.mowglii.com/itsycal/): cute little monthly calender in your menu bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this! 
 * [Meeting Bar](https://meetingbar.app/): integrates with calendar and meeting services like Zoom to be able to see your upcoming meetings and launch right into them with one click.
 * [Aerial](https://aerialscreensaver.github.io/): beautiful screensavers like what you'd get on Apple TV. Though the latest MacOS Sonoma is meant to bring some of that natively! 
@@ -136,3 +137,4 @@ I'm sure my setup with evolve over time so I'll try and keep this page updated o
 
 > 2023/10/15: Added note on disabling _Smart zoom_  
 > 2024/09/7: Added *Menu Bar Spacing*, called out *TextPal* is no more, linked to *CleanShot X* as a paid alternative
+> 2025/01/26: Added *Ice* as another menu bar icon manager
