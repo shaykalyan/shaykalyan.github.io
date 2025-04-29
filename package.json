@@ -12,10 +12,10 @@
   "author": "Shay Kalyan",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "concurrently": "^6.5.1",
-    "five-server": "^0.1.6",
+    "five-server": "^0.4.3",
     "moment": "^2.29.4",
     "sass": "^1.45.2"
   }
