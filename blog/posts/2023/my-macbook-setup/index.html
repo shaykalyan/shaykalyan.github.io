@@ -111,7 +111,7 @@
 <p>Outside of the typical programs we'd all be installing, like your favourite web browser, these are some apps that I'm finding to be essential on MacOS.</p>
 <ul>
 <li><a href="https://rectangleapp.com/">Rectangle app</a>: window snapping/tiling. A pro tip is here to set up shortcuts similar to Windows, e.g., <code>CTRL + ⌘ + &lt;arrow key&gt;</code> for left, right, and maximizing of windows.</li>
-<li><s><a href="https://www.textpal.app/">TextPal</a>: emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., <code>\&lt;start typing&gt;</code>.</s> Discontinued 😞— give <a href="https://matthewpalmer.net/rocket/">Rocket</a> a go instead!</li>
+<li><a href="https://www.emoogle.org/">Emoogle</a>: emojis at your fingertips! This has autocomplete prompting with a shortcut of your choosing to activate, e.g., <code>\&lt;start typing&gt;</code>.</li>
 <li><a href="https://shottr.cc/">Shottr</a>: powered-up screenshots and annotating. The built-in screen capture support is <em>fine</em>, but this lets you perform markup and other edits pretty easily, and have it all go straight to your clipboard— zero faff.
 <ul>
 <li><a href="https://cleanshot.com/">CleanShot X</a> is what I've been using and it's excellent. Requires a paid license, though!</li>
@@ -120,8 +120,6 @@
 <li><a href="https://getkap.co/">Kap</a>: easy video capture and processing of them out to gifs.</li>
 <li><a href="https://maccy.app/">Maccy</a>: clipboard manager. There are quite a few options out there, but I find this to have the least intrusive UX. It also has support for pinned (permanent) items and non-text content like images.</li>
 <li><a href="https://flowapp.info/">Flow</a>: a simple and effective menu bar based pomodoro timer.</li>
-<li><s><a href="https://github.com/dwarvesf/hidden#-install">Hidden Bar</a>: simple app to hide the overflow of icons along the menu bar. If you need more control/flexibility, there's also the paid <a href="https://www.macbartender.com/">Bartender</a> app.</s></li>
-<li><s><a href="https://sindresorhus.com/menu-bar-spacing">Menu Bar Spacing</a>: Adjust the spacing and padding of the menu bar icons to be able to see more before that pesky notch gets in the way.</s></li>
 <li><a href="https://github.com/jordanbaird/Ice">Ice</a> is a neat new alternative for managing your menu bar overflow of icons. It has a few more options including the ability to tweak the spacing of icons.</li>
 <li><a href="https://www.mowglii.com/itsycal/">Itsycal</a>: cute little monthly calender in your menu bar and shows upcoming events. I've synced my Google calendar with the built-in calender app for it to all show up effortlessly on this!</li>
 <li><a href="https://meetingbar.app/">Meeting Bar</a>: integrates with calendar and meeting services like Zoom to be able to see your upcoming meetings and launch right into them with one click.</li>
@@ -151,7 +149,12 @@
 <p><strong>Keyboard</strong></p>
 <ul>
 <li>Keyboard navigation: <code>Enable</code></li>
-<li>Keyboard Shortcuts &gt; App Shortcuts &gt; All Applications &gt; type in <code>Emoji &amp; Symbols</code> in the input box and pick your shortcut, e.g., <code>⌘ + .</code> to pop up the emoji panel!</li>
+<li>Keyboard Shortcuts &gt; App Shortcuts &gt; All Applications &gt;
+<ul>
+<li>type in <code>Emoji &amp; Symbols</code> in the input box and pick your shortcut, e.g., <code>⌘ + .</code> to pop up the emoji panel!</li>
+<li>type in <code>New Tab to the Right</code> with shortcut <code>^ (control) + T</code> to enable new tab creation to the right of the current tab in Chrome (<code>⌘ + T</code> creates it next to the right-most tab)</li>
+</ul>
+</li>
 <li>Input Sources &gt; Edit &gt; Capitalize words automatically: <code>Disable</code></li>
 <li>Input Sources &gt; Edit &gt; Add period with double-space: <code>Disable</code></li>
 <li>Input Sources &gt; Edit &gt; Use smart quotes and dashes: <code>Disable</code></li>
@@ -169,8 +172,9 @@
 <h2>Finder Settings</h2>
 <p>Some minor tweaks here:</p>
 <ul>
-<li>General &gt; set home directory as default</li>
-<li>Tags &gt; disable these to remove clutter</li>
+<li>Settings &gt; General &gt; set home directory as default</li>
+<li>Settings &gt; Tags &gt; disable these to remove clutter</li>
+<li>View &gt; Show Path Bar</li>
 </ul>
 <p>As for moving around the directories, these shortcuts are handy to know:</p>
 <ul>
@@ -179,27 +183,33 @@
 <li>You can also hold the <code>Option</code> key while looking at the context menu (&quot;right click&quot;) of an item in Finder to reveal alternative selections, including having the <code>Copy</code> option become <code>Copy &lt;item&gt; as Pathname</code></li>
 </ul>
 <h2>Miscellaneous</h2>
-<ul>
-<li>
 <p>Enable the app switcher on all displays instead of only showing it on the screen where the dock was last used (<a href="https://superuser.com/questions/670252/cmdtab-app-switcher-is-on-the-wrong-monitor/1625752#1625752">source link</a>)</p>
 <pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> com.apple.dock appswitcher-all-displays <span class="token parameter variable">-bool</span> <span class="token boolean">true</span>  <br><span class="token function">killall</span> Dock</code></pre>
-</li>
-<li>
 <p>Enable repeated keys on press and hold, instead of accessing symbol/accented characters (<a href="https://apple.stackexchange.com/questions/452748/on-macos-how-can-you-enable-repeated-keys-but-only-for-specific-apps/452755#452755">source link</a>)</p>
 <pre class="language-sh"><code class="language-sh"><span class="token comment"># global setting or a specific app, then restart the machine/app</span><br>defaults <span class="token function">write</span> <span class="token parameter variable">-g</span> ApplePressAndHoldEnabled <span class="token parameter variable">-bool</span> <span class="token boolean">false</span><br><span class="token comment"># defaults write &lt;com.company.app> ApplePressAndHoldEnabled -bool false</span></code></pre>
-</li>
-</ul>
+<p>Expand the Save Panel/Modal by default</p>
+<pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode <span class="token parameter variable">-bool</span> <span class="token boolean">true</span><br>defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 <span class="token parameter variable">-bool</span> <span class="token boolean">true</span><br><span class="token function">killall</span> Finder</code></pre>
 <h2>Development</h2>
 <p>There's already a lot of good info out there for developer tooling and apps, but I'll quickly jot a couple of things down here for future me.</p>
 <p><strong>iTerm2</strong></p>
 <p><a href="https://iterm2.com/">iTerm2</a>, a terminal alternative. I set this up Quake-like with a hotkey to bring up the terminal as an overlay at the top of the screen:</p>
 <ul>
+<li>Appearance &gt; General &gt; Theme: <code>Minimal</code></li>
 <li>Appearance &gt; General &gt; Exclude from Dock and ⌘ + Tab Application Switcher: <code>Enable</code></li>
 <li>Appearance &gt; Tabs &gt; Show tab bar even when there is only one tab: <code>Enable</code></li>
 <li>Profiles &gt; [Your profile] &gt; Window &gt; Style: <code>Full-width Top of Screen</code></li>
 <li>Profiles &gt; [Your profile] &gt; Keys &gt; Key Mappings &gt; Presets: <code>Natural Text Editing</code></li>
 <li>Keys &gt; Hotkey &gt; Show/hide all windows with a system-wide hotkey: <code>Enable</code></li>
 <li>Keys &gt; Hotkey &gt; Hotkey: <code>SHIFT ⌘ ` </code></li>
+</ul>
+<p>Theme</p>
+<ul>
+<li>Get a Snazzy color pallette, too: <a href="https://github.com/sindresorhus/iterm2-snazzy">sindresorhus/iterm2-snazzy</a></li>
+</ul>
+<p>Plugins</p>
+<ul>
+<li><a href="https://ohmyz.sh/">Oh My Zsh</a> with plugins: <code>zsh-syntax-highlighting</code>, <code>zsh-autosuggestions</code>, <code>zsh-history-substring-search</code></li>
+<li><a href="https://github.com/dvorka/hstr">hstr</a> for navigating history easily</li>
 </ul>
 <p><strong>Brew</strong></p>
 <p><a href="https://brew.sh/">Brew</a>, a package manager for various command line software as well as graphical apps via <a href="https://formulae.brew.sh/cask/">casks</a>.</p>
@@ -214,8 +224,9 @@
 <p>✌🏽</p>
 <blockquote>
 <p>2023/10/15: Added note on disabling <em>Smart zoom</em><br>
-2024/09/7: Added <em>Menu Bar Spacing</em>, called out <em>TextPal</em> is no more, linked to <em>CleanShot X</em> as a paid alternative
-2025/01/26: Added <em>Ice</em> as another menu bar icon manager</p>
+2024/09/7: Added <em>Menu Bar Spacing</em>, called out <em>TextPal</em> is no more, linked to <em>CleanShot X</em> as a paid alternative<br>
+2025/01/26: Added <em>Ice</em> as another menu bar icon manager<br>
+2025/11/23: Added some other tweaks and references. This is just becoming a &quot;living doc&quot;, I guess? 😅</p>
 </blockquote>
 
         </div>
