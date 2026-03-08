@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean:blog": "rm -rf blog",
+    "build:blog": "npm run clean:blog && eleventy",
+    "build": "npm run build:blog",
     "sass": "sass --watch scss/:stylesheets/",
     "serve": "five-server --port=9000 --ignore=node_modules,scss,eleventy --no-css-inject",
     "blog": "eleventy --watch",
