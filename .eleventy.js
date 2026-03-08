@@ -1,17 +1,19 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-
-const moment = require('moment');
-moment.locale('en');
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addFilter('dateIso', date => {
-    return moment(date).toISOString();
+    return new Date(date).toISOString();
   });
   eleventyConfig.addFilter('dateReadable', date => {
-    return moment(date).format('LL'); // E.g. May 31, 2019
+    return dateFormatter.format(new Date(date)); // E.g. May 31, 2019
   });
 
   eleventyConfig.addCollection("tagList", require("./eleventy/js/getTagsList.js"));
