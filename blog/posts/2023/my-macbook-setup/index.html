@@ -1,5 +1,13 @@
 <!doctype html>
 <html lang="en">
+    
+    
+        
+    
+    
+    
+    
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,15 +32,11 @@
         <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
 
         <title>My MacBook Setup | Blog</title>
+        <link rel="canonical" href="https://shaykalyan.com/blog/posts/2023/my-macbook-setup/">
+        <meta name="description" content="A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows."/>
         <meta property="og:title" content="My MacBook Setup | Blog"/>
-        <meta 
-            name="description" 
-            content="A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows."/>
-        <meta 
-            property="og:description" 
-            content="A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows.">
-
-        
+        <meta property="og:description" content="A brief breakdown of the apps and MacOS tweaks on my new MacBook after switching from years of using Windows.">
+        <meta property="og:url" content="https://shaykalyan.com/blog/posts/2023/my-macbook-setup/">
         <meta property="og:image" content="https://shaykalyan.com/blog/images/previews/new-macos-setup.png"/>
         <meta name="twitter:image" content="https://shaykalyan.com/blog/images/previews/new-macos-setup.png"/>
 
@@ -54,7 +58,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="/blog" class="active">Blog</a>
+                                <a href="/blog/" class="active">Blog</a>
                             </li>
                             <li>
                                 <a href="/cv.pdf" class="link-external" target="_blank" rel="noopener noreferrer">Resume</a>
@@ -77,31 +81,33 @@
     <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
         <time datetime="2023-09-25T16:00:00.000Z">September 25, 2023</time>
-        
     </div>
     <div class="post-tags link-alternate col-xs-12 col-sm-auto">
         <span class="icon icon-price-tags"></span>
         
             <span class="post-metadata-tag">
-                <a href="/blog/tags/macbook" class="link-alternate">
+                
+                <a href="/blog/tags/macbook/" class="link-alternate">
                     macbook
                 </a>
             </span>
         
             <span class="post-metadata-tag">
-                <a href="/blog/tags/macos" class="link-alternate">
+                
+                <a href="/blog/tags/macos/" class="link-alternate">
                     macos
                 </a>
             </span>
         
     </div>
 </div>
+
           </div>
         </div>
       </div>
       <div class="row post-content">
         <div class="col-sm-12">
-          <h2>New mac, hu dis? 😉</h2>
+          <p>New mac, hu dis? 😉</p>
 <p>I left Microsoft and started at the new gig a little under two months ago where they handed me a MacBook to work on. Now, while I've used MacOS in the past, my 2014 MacBook Pro has been running Windows for the past eight years so I had to get my bearings and relearn a few things. Going back and forth between the OSes wasn't fun either.</p>
 <p>So, to me, the decision here was a no-brainer: aging desktop and laptop machines that are long overdue for a refresh, M-series chips being as good as they are, and being tired of having to maintain an at-home and on-the-go setup.. it was time to switch my personal computing life to MacOS by picking up a MacBook Pro.</p>
 <p>This page has some of the apps I've got running and settings tweaks I've made on my machine to help make that transition a bit easier. If you have any tips or tricks of your own, or suggestions for things I should check out, then hit me up on Threads: <a href="//threads.net/@shaykalyan">@shaykalyan</a>!</p>
@@ -185,11 +191,16 @@
 </ul>
 <h2>Miscellaneous</h2>
 <p>Enable the app switcher on all displays instead of only showing it on the screen where the dock was last used (<a href="https://superuser.com/questions/670252/cmdtab-app-switcher-is-on-the-wrong-monitor/1625752#1625752">source link</a>)</p>
-<pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> com.apple.dock appswitcher-all-displays <span class="token parameter variable">-bool</span> <span class="token boolean">true</span>  <br><span class="token function">killall</span> Dock</code></pre>
+<pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> com.apple.dock appswitcher-all-displays <span class="token parameter variable">-bool</span> <span class="token boolean">true</span>  
+<span class="token function">killall</span> Dock</code></pre>
 <p>Enable repeated keys on press and hold, instead of accessing symbol/accented characters (<a href="https://apple.stackexchange.com/questions/452748/on-macos-how-can-you-enable-repeated-keys-but-only-for-specific-apps/452755#452755">source link</a>)</p>
-<pre class="language-sh"><code class="language-sh"><span class="token comment"># global setting or a specific app, then restart the machine/app</span><br>defaults <span class="token function">write</span> <span class="token parameter variable">-g</span> ApplePressAndHoldEnabled <span class="token parameter variable">-bool</span> <span class="token boolean">false</span><br><span class="token comment"># defaults write &lt;com.company.app> ApplePressAndHoldEnabled -bool false</span></code></pre>
+<pre class="language-sh"><code class="language-sh"><span class="token comment"># global setting or a specific app, then restart the machine/app</span>
+defaults <span class="token function">write</span> <span class="token parameter variable">-g</span> ApplePressAndHoldEnabled <span class="token parameter variable">-bool</span> <span class="token boolean">false</span>
+<span class="token comment"># defaults write &lt;com.company.app> ApplePressAndHoldEnabled -bool false</span></code></pre>
 <p>Expand the Save Panel/Modal by default</p>
-<pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode <span class="token parameter variable">-bool</span> <span class="token boolean">true</span><br>defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 <span class="token parameter variable">-bool</span> <span class="token boolean">true</span><br><span class="token function">killall</span> Finder</code></pre>
+<pre class="language-sh"><code class="language-sh">defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode <span class="token parameter variable">-bool</span> <span class="token boolean">true</span>
+defaults <span class="token function">write</span> NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 <span class="token parameter variable">-bool</span> <span class="token boolean">true</span>
+<span class="token function">killall</span> Finder</code></pre>
 <h2>Development</h2>
 <p>There's already a lot of good info out there for developer tooling and apps, but I'll quickly jot a couple of things down here for future me.</p>
 <p><strong>iTerm2</strong></p>
@@ -235,6 +246,7 @@
     </article>
   </div>
 </div>
+
         </div>
 
         <footer>

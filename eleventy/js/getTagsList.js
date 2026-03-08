@@ -1,13 +1,19 @@
-module.exports = function (collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(function (item) {
-        if ("tags" in item.data) {
-            for (const tag of item.data.tags) {
-                tagSet.add(tag);
-            }
-        }
-    });
+const hiddenTags = new Set(["all", "nav", "post", "posts", "tagList"]);
 
-    // returning an array in addCollection works in Eleventy 0.5.3
-    return [...tagSet];
+module.exports = function (collectionApi) {
+  const tagSet = new Set();
+
+  for (const item of collectionApi.getFilteredByGlob("eleventy/posts/**/*.md")) {
+    if (!Array.isArray(item.data.tags)) {
+      continue;
+    }
+
+    for (const tag of item.data.tags) {
+      if (!hiddenTags.has(tag)) {
+        tagSet.add(tag);
+      }
+    }
+  }
+
+  return [...tagSet].sort((a, b) => a.localeCompare(b));
 };

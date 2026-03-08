@@ -7,7 +7,7 @@ previewImageName: welcome-to-the-blog.png
 date: 2020-05-31 18:00:00.00 -7
 ---
 The internet has made it more accessible than ever for folks to ask questions, share knowledge, and collaborate. And I've got to admit, without it, I wouldn't be where I am today doing the things I do. I figured it was due time I created a space to give back, even if it ends up with me just blabbering into the void 🤷🏼‍♂️.
----
+<!-- excerpt -->
 
 ## A bit of history
 I designed and created this site about six years ago in 2014 (!), back when I was still a student and learning the ropes of software engineering. At the time, web development was really booming with some awesome tooling available built on [Node.js](https://nodejs.org/) like [NPM](https://www.npmjs.com/) and [Gulp](https://gulpjs.com/) being all hip.. and I wanted in on that. 

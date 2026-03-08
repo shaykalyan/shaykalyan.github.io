@@ -7,7 +7,7 @@ previewImageName: review-the-code-preview.png
 date: 2023-02-12 18:00:00.00 -7
 ---
 Code Reviews (CRs), or Pull Requests (PRs), need no introduction if you're familiar with writing and collaborating on code. The benefits of this practice have been well articulated across various mediums, and in this post I will describe some of the habits I've picked up that help in pushing through PRs swiftly and reducing friction for both authors and reviewers.
----
+<!-- excerpt -->
 
 ## The basics: a title and description
 The title and description together is the most important piece of creating a PR outside of the code itself. Not only is it meant to brief the reviewers as to what the changes are that are being proposed, but also give the *why* and the context behind it all. Having worked in a couple of large codebases now, spanning at least a couple of years in each, there have been numerous occasions where past PR descriptions have reminded me of the motivation and context behind changes. For example, a colleague recently messaged me about a section of the code and questioning why the business logic does X instead of Y? Without knowing the immediate answer, a quick `git blame` lead us to find a PR from myself, where past Shay wrote exactly why it was tweaked! 

@@ -1,5 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
+    {% set pageTitle = metadata.blog.title %}
+    {% if title %}
+        {% set pageTitle = title ~ " | Blog" %}
+    {% endif %}
+    {% set pageDescription = description or metadata.blog.description %}
+    {% set socialPreviewImage = previewImageName or metadata.blog.defaultPreviewImage %}
+    {% set pageUrl = metadata.site.url ~ (page.url | url) %}
+    {% set socialPreviewUrl = metadata.site.url ~ metadata.blog.path ~ "images/previews/" ~ socialPreviewImage %}
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,18 +31,14 @@
         <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
 
-        <title>{{ title or renderData.title or "Shay Kalyan | Blog" }} | Blog</title>
-        <meta property="og:title" content="{{ title or renderData.title or "Shay Kalyan | Blog" }} | Blog"/>
-        <meta 
-            name="description" 
-            content="{{ description or renderData.description or "The personal website of Shay Kalyan – a Software Engineer based in Seattle, WA" }}"/>
-        <meta 
-            property="og:description" 
-            content="{{ description or renderData.description or "The personal website of Shay Kalyan – a Software Engineer based in Seattle, WA" }}">
-
-        {% set socialPreviewImage = previewImageName or "welcome-to-the-blog.png" %}
-        <meta property="og:image" content="https://shaykalyan.com/blog/images/previews/{{ socialPreviewImage }}"/>
-        <meta name="twitter:image" content="https://shaykalyan.com/blog/images/previews/{{ socialPreviewImage }}"/>
+        <title>{{ pageTitle }}</title>
+        <link rel="canonical" href="{{ pageUrl }}">
+        <meta name="description" content="{{ pageDescription }}"/>
+        <meta property="og:title" content="{{ pageTitle }}"/>
+        <meta property="og:description" content="{{ pageDescription }}">
+        <meta property="og:url" content="{{ pageUrl }}">
+        <meta property="og:image" content="{{ socialPreviewUrl }}"/>
+        <meta name="twitter:image" content="{{ socialPreviewUrl }}"/>
 
         <link rel="stylesheet" href="/stylesheets/screen.css">
     </head>
@@ -54,7 +58,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="/blog" class="active">Blog</a>
+                                <a href="{{ metadata.blog.path | url }}" class="active">Blog</a>
                             </li>
                             <li>
                                 <a href="/cv.pdf" class="link-external" target="_blank" rel="noopener noreferrer">Resume</a>

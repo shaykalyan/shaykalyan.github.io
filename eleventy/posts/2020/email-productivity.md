@@ -7,7 +7,7 @@ previewImageName: email-productivity.png
 date: 2020-12-5 18:00:00.00 -7
 ---
 A quick post about some of the Outlook features I use including rules, categories, and search folders to stay on top of the thousands of emails that hit my work inbox on the daily!
----
+<!-- excerpt -->
 
 Outlook, like many of the applications in the [Office 365](https://en.wikipedia.org/wiki/Office_365) suite, is quite powerful. If I had to have a guess, I'm using about 10% of its full potential in my day-to-day, but even with just that I feel like I have a pretty good handle over my inbox. I'll be touching on a few of the features that I have been using over the past four-ish years that lets me have a sidebar that looks something like this: 
 

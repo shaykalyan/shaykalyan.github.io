@@ -7,7 +7,7 @@ previewImageName: lily58-build.png
 date: 2021-05-10 18:00:00.00 -7
 ---
 A build log / reference post covering my first stab at a hardware project: building a split ergonomic keyboard running the QMK firmware. After being baited by several beautiful builds online, I really had no choice but to dive into the world of mechanical keyboards... with zero electronics experience under my belt. I relied on several online resources to learn about what goes into building a keyboard, the basic equipment needed, and the firmware pieces necessary for it all to work. I aggregate that information here to help serve as a reference for others planning to give it a shot!
----
+<!-- excerpt -->
 
 ## But why?
 Before I dig into the how, I figured I should share a bit about the _why_ I went ahead and put together my own keyboard.

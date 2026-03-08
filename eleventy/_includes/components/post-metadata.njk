@@ -2,13 +2,13 @@
     <div class="post-metadata-timestamp col-xs-12 col-sm-auto">
         <span class="icon icon-calendar"></span>
         <time datetime="{{ (post.date or page.date) | dateIso }}">{{ (post.date or page.date) | dateReadable }}</time>
-        {# {{ post | log }} #}
     </div>
     <div class="post-tags link-alternate col-xs-12 col-sm-auto">
         <span class="icon icon-price-tags"></span>
         {% for tag in (post.data.tags or tags) %}
             <span class="post-metadata-tag">
-                <a href="/blog/tags/{{tag}}" class="link-alternate">
+                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                <a href="{{ tagUrl | url }}" class="link-alternate">
                     {{ tag }}
                 </a>
             </span>

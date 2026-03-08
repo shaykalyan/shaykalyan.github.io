@@ -6,8 +6,8 @@ description: A brief breakdown of the apps and MacOS tweaks on my new MacBook af
 previewImageName: new-macos-setup.png
 date: 2023-09-25 09:00:00.00 -7
 ---
-New mac, hu dis? 😉 ---
----
+New mac, hu dis? 😉
+<!-- excerpt -->
 
 I left Microsoft and started at the new gig a little under two months ago where they handed me a MacBook to work on. Now, while I've used MacOS in the past, my 2014 MacBook Pro has been running Windows for the past eight years so I had to get my bearings and relearn a few things. Going back and forth between the OSes wasn't fun either. 
 

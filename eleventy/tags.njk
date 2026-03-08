@@ -1,14 +1,11 @@
 ---
 eleventyExcludeFromCollections: true
 pagination:
-  data: collections
+  data: collections.tagList
   size: 1
   alias: tag
-  filter: 
-    - all
-    - tagList
 layout: layouts/base.njk
-renderData:
+eleventyComputed:
   title: Posts tagged with "{{ tag }}"
   description: All posts tagged with "{{ tag }}"
 permalink: /tags/{{ tag }}/
@@ -19,7 +16,8 @@ permalink: /tags/{{ tag }}/
             <h1>
             Tagged  
             <span class="post-metadata-tag">
-                    <a href="/blog/tags/{{tag}}" class="link-alternate">
+                    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                    <a href="{{ tagUrl | url }}" class="link-alternate">
                         {{ tag }}
                     </a>
                 </span>
@@ -29,7 +27,7 @@ permalink: /tags/{{ tag }}/
 
     <div class="row">
         <div class="col">
-            {% set posts = collections[tag] %}
+            {% set posts = collections[tag] | sortPostsByDate %}
             {% include "components/posts-list.njk" %}
         </div>
     </div>
