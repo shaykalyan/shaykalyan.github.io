@@ -11,11 +11,15 @@
 - Node-based tooling (no framework app runtime).
 - Eleventy `v3` for blog generation.
 - Nunjucks templates + Markdown content.
+- Global Eleventy data via `eleventy/_data/metadata.js`.
 - Sass compiled to `stylesheets/screen.css`.
 - Legacy jQuery used for nav/menu behavior.
 
 ## Key Directories
 - `eleventy/`: source for blog content/templates.
+- `eleventy/posts/`: Markdown blog posts.
+- `eleventy/_includes/`: blog layouts/components.
+- `eleventy/_data/`: shared Eleventy metadata and global data.
 - `blog/`: generated blog output committed to repo.
 - `scss/`: Sass source.
 - `stylesheets/`: compiled CSS.
@@ -23,21 +27,32 @@
 - `images/`, `fonts/`: shared static assets.
 
 ## Build and Dev Commands
-- `npm run dev`: runs Sass watcher, Eleventy watcher, and local static server.
+- `npm run dev`: runs Sass watch, Eleventy watch, and `five-server` for the repo root.
 - `npm run blog`: Eleventy watch build to `blog/`.
+- `npm run serve`: serves the repo root locally; useful because the site is hybrid and blog templates reference root-level shared assets.
 - `npm run sass`: Sass watch compile to `stylesheets/`.
-- `npx eleventy`: one-shot blog build.
+- `npm run build`: clean rebuild of the generated blog output.
+- `npx eleventy`: one-shot Eleventy build without the `clean:blog` wrapper.
 
 ## Eleventy Configuration Notes
 - Config file: `.eleventy.js`.
 - Input dir: `eleventy/`.
 - Output dir: `blog/`.
 - Path prefix: `/blog/`.
-- Pass-through copy is currently only `eleventy/images`.
-- Custom filters (`dateIso`, `dateReadable`) currently use `moment`.
+- Blog metadata defaults live in `eleventy/_data/metadata.js`.
+- Custom collection `posts` explicitly targets `eleventy/posts/**/*.md` and is sorted newest-first.
+- Custom collection `tagList` is derived from post tags only.
+- Custom filters are `dateIso`, `dateReadable`, and `sortPostsByDate`.
+- Passthrough copy from Eleventy is intentionally limited to blog-local images under `eleventy/images/`.
+- Front matter excerpts use the explicit separator `<!-- excerpt -->`.
 
 ## Operational Notes
 - Generated content in `blog/` is tracked in git. Regenerate before committing changes to blog source.
 - Avoid manual edits under `blog/`; update `eleventy/` sources/templates instead.
-- Root `index.html` and blog layout duplicate some head/nav/footer concerns.
+- The site is intentionally hybrid: root assets like `/stylesheets`, `/js`, `/images`, `/fonts`, and `/cv.pdf` stay outside Eleventy output and are served from the repo root in local dev and production.
+- Root `index.html` and blog layout still duplicate some head/nav/footer concerns.
+- Blog templates expect shared root assets to remain available at absolute paths; do not copy those into `blog/` as part of normal Eleventy output.
+- Keep `sitemap.xml` at the repo root; it is generated from `eleventy/sitemap.njk`.
+- If you add new blog-local image types under `eleventy/images/` beyond `.png` and `.jpg`, update passthrough copy accordingly.
+- Remove stray macOS files like `.DS_Store` if they appear inside `eleventy/`; they are not meaningful source files.
 - No CI/deploy workflow is checked in (`.github/workflows/` absent).
